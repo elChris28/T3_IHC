@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cine del Norte - Horarios</title>
+  <link rel="stylesheet" href="/Frontend/css/horario.css" />
+</head>
+<body>
+
+  <!-- Navbar sin Bootstrap -->
+  <nav class="navbar-custom">
+    <div class="navbar-container">
+      <div class="navbar-left">
+        <a href="Inicio.html" class="navbar-logo">🎬 Cine del Norte</a>
+        <ul class="nav-left">
+          <li><a href="cartelera.html">Cartelera</a></li>
+          <li><a href="Nosotros.html">Nosotros</a></li>
+          <li><a href="promociones.html">Promociones</a></li>
+          <li><a href="horarios.html">Horarios</a></li>
+          <li><a href="Dulceria.html">Dulcería</a></li>
+        </ul>
+      </div>
+      <ul class="nav-right">
+        <li><a href="#">Iniciar Sesión</a></li>
+        <li><a href="/index.html">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>La emoción del cine en tu ciudad</h1>
+    <p>Consulta funciones, estrenos y reserva tu entrada.</p>
+    <a href="#cartelera" class="btn-primary">Ver Cartelera</a>
+  </section>
+
+  <!-- Main content -->
+  <main class="container">
+    <h2>Horarios</h2>
+
+    <!-- Película -->
+    <article class="tarjeta-pelicula">
+      <div class="poster-container">
+        <img src="/img/pelicula.png" alt="Poster de película" class="poster" />
+      </div>
+      <div class="info-pelicula">
+        <h3 class="titulo">Título de la Película</h3>
+        <p align="justify"><strong>Sinopsis:</strong> El legendario asesino John Wick se ve obligado a salir de su retiro por culpa de un exsocio que intenta controlar un siniestro grupo internacional de asesinos. Obligado a ayudarle por un juramento de sangre, John viaja a Roma para enfrentarse a algunos de los asesinos más letales del mundo.</p>
+        <p><strong>Idioma:</strong> Español</p>
+        <p><strong>Disponibilidad:</strong> 2D, 3D, Subtitulada</p>
+
+        <div class="horarios-container">
+          <h4>Horarios:</h4>
+
+          <div class="bloque-sala">
+            <strong>Sala 1 (2D)</strong><br />
+            <button class="btn-horario">14:00</button>
+            <button class="btn-horario">17:00</button>
+            <button class="btn-horario">20:00</button>
+          </div>
+
+          <div class="bloque-sala">
+            <strong>Sala 2 (Estándar)</strong><br />
+            <button class="btn-horario">15:00</button>
+            <button class="btn-horario">18:00</button>
+            <button class="btn-horario">21:00</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="tarjeta-pelicula">
+      <div class="poster-container">
+        <img src="/img/mario.png" alt="Poster de película" class="poster" />
+      </div>
+      <div class="info-pelicula">
+        <h3 class="titulo">Título de la Película</h3>
+        <p align="justify"><strong>Sinopsis:</strong> Dos hermanos plomeros, Mario y Luigi, caen por las alcantarillas y llegan a un mundo subterráneo mágico en el que deben enfrentarse al malvado Bowser para rescatar a la princesa Peach, quien ha sido forzada a aceptar casarse con él.</p>
+        <p><strong>Idioma:</strong> Español</p>
+        <p><strong>Disponibilidad:</strong> 2D, 3D, Subtitulada</p>
+
+        <div class="horarios-container">
+          <h4>Horarios:</h4>
+
+          <div class="bloque-sala">
+            <strong>Sala 3 (VIP)</strong><br />
+            <button class="btn-horario">13:00</button>
+            <button class="btn-horario">15:00</button>
+            <button class="btn-horario">20:00</button>
+          </div>
+
+          <div class="bloque-sala">
+            <strong>Sala 4 (3D)</strong><br />
+            <button class="btn-horario">15:00</button>
+            <button class="btn-horario">18:00</button>
+            <button class="btn-horario">21:00</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="tarjeta-pelicula">
+      <div class="poster-container">
+        <img src="/img/minion.png" alt="Poster de película" class="poster" />
+      </div>
+      <div class="info-pelicula">
+        <h3 class="titulo">Título de la Película</h3>
+        <p align="justify"><strong>Sinopsis:</strong> Dos hermanos plomeros, Mario y Luigi, caen por las alcantarillas y llegan a un mundo subterráneo mágico en el que deben enfrentarse al malvado Bowser para rescatar a la princesa Peach, quien ha sido forzada a aceptar casarse con él.</p>
+        <p><strong>Idioma:</strong> Español</p>
+        <p><strong>Disponibilidad:</strong> 2D, 3D, Subtitulada</p>
+
+        <div class="horarios-container">
+          <h4>Horarios:</h4>
+
+          <div class="bloque-sala">
+            <strong>Sala 1 (2D)</strong><br />
+            <button class="btn-horario">10:00</button>
+            <button class="btn-horario">12:00</button>
+            <button class="btn-horario">14:00</button>
+          </div>
+
+          <div class="bloque-sala">
+            <strong>Sala 5 (IMAX)</strong><br />
+            <button class="btn-horario">14:00</button>
+            <button class="btn-horario">16:00</button>
+            <button class="btn-horario">18:00</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="logo-cine.png" alt="Cine del Norte" />
+        <p class="logo-text">CINE DEL NORTE</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>PROGRAMACIÓN</h3>
+          <ul>
+            <li><a href="#">Cartelera</a></li>
+            <li><a href="#">Próximamente</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>NOSOTROS</h3>
+          <ul>
+            <li><a href="#">Conócenos</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de Protección de Datos Personales</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>OTROS SERVICIOS</h3>
+          <ul>
+            <li><a href="#">Publicidad</a></li>
+            <li><a href="#">Reportar incidencia</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Todos los derechos reservados a Cine del Norte</p>
+      <div class="redes-sociales">
+        <a href="#" class="icono facebook">📘 Facebook</a>
+        <a href="#" class="icono twitter">🐦 Twitter</a>
+        <a href="#" class="icono instagram">📸 Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

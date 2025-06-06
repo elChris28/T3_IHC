@@ -82,7 +82,7 @@ body {
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-              url('/img/banner peliculas.png') center/cover no-repeat;
+              url('/img/Banner_Dulceria.png') center/cover no-repeat;
   z-index: -1;
 }
 
@@ -117,64 +117,113 @@ body {
   background-color: #b00610;
 }
 
-/* ============================= */
-/*           CARTELERA                  */
-/* ============================= */
-
-.contenedor-cartelera {
-  background-color: #111;
+/* -------- Main Content -------- */
+.container {
+  background-color: #101110;
   color: #fff;
   padding: 0.5rem 2rem;
-  text-align: center;
 }
-CAMBIE
-.contenedor-cartelera h2 {
-  font-size: 3rem;
+
+h2 {
+  text-align: center;
   margin-bottom: 2rem;
+  font-size: 2.5rem;
   color: gold;
 }
 
-.contenedor-peliculas {
+/* Tarjeta de Película */
+
+.container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6rem;
+  flex-direction: column;
+  align-items: center;
 }
-
-.tarjeta {
-  background-color: #222;
-  border-radius: 10px;
+.tarjeta-pelicula {
+  display: flex;
+  gap: 2rem;
+  width: 60%;
+  background-color: #222323;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
   padding: 1rem;
-  width: 250px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
-.tarjeta:hover {
-  transform: scale(1.05);
+.poster-container {
+  flex: 1 1 300px;
+  max-width: 300px;
+  height: 430px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
 
-.tarjeta img {
+.poster-container img.poster {
   width: 100%;
-  border-radius: 5px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-.tarjeta h3 {
-  margin: 1rem 0 0.5rem;
+.info-pelicula {
+  flex: 2 1 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-pelicula h3.titulo {
+  margin-top: 0;
   font-size: 1.8rem;
+  color: red;
 }
 
-.btn-detalles {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #e50914;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.5rem;
+.info-pelicula p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+  color:white;
 }
 
-.btn-detalles:hover {
-  text-decoration: underline;
+/* Horarios */
+.horarios-container {
+  margin-top: 1rem;
+}
+
+.horarios-container h4 {
+  margin-bottom: 0.75rem;
+  color: red;
+  font-size: 1.2rem;
+}
+
+.bloque-sala {
+  margin-bottom: 1rem;
+}
+
+.bloque-sala strong {
+  font-weight: 700;
+  color: white;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Botones de horarios */
+.btn-horario {
+  background-color: transparent;
+  border: 2px solid red;
+  color:white;
+  padding: 0.3rem 0.8rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-horario:hover {
+  background-color: red;
+  color: black;
 }
 
 /*===================================================================================*/
@@ -279,3 +328,4 @@ CAMBIE
   font-size: 0.75rem;
   color: #ccc;
 }
+
