@@ -127,7 +127,7 @@ body {
   padding: 0.5rem 2rem;
   text-align: center;
 }
-CAMBIE
+
 .contenedor-cartelera h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -141,29 +141,96 @@ CAMBIE
   gap: 6rem;
 }
 
+/* --- Tarjeta general --- */
 .tarjeta {
   background-color: #222;
   border-radius: 10px;
   padding: 1rem;
   width: 250px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s;
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
 }
 
-.tarjeta:hover {
-  transform: scale(1.05);
-}
-
-.tarjeta img {
+/* --- Contenedor de las imágenes (con animación) --- */
+.contenedor-img {
+  position: relative;
   width: 100%;
-  border-radius: 5px;
+  height: 370px; /* puedes ajustar según tamaño de imagen */
+  overflow: hidden;
 }
 
+.contenedor-img img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.contenedor-img img:last-child {
+  position: absolute;
+  width: 250px;
+  height: 350px; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 10%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgb(0, 0, 0) 250%
+  );
+  transform: translateY(25%);
+  transition: all 0.3s ease;
+  opacity: 0;
+  z-index: 10;
+}
+
+/* --- Animaciones al hacer hover sobre la imagen --- */
+.contenedor-img:hover img:first-child {
+  transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+}
+
+.contenedor-img:hover img:last-child {
+  opacity: 1;
+  transform: translateY(10%);
+}
+
+/* --- Gradiente encima de la imagen --- */
+.contenedor-img::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 10%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0) 95%
+  );
+  opacity: 0;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.contenedor-img:hover::before {
+  opacity: 1;
+}
+
+/* --- Título de la película --- */
 .tarjeta h3 {
   margin: 1rem 0 0.5rem;
   font-size: 1.8rem;
+  color: white;
 }
 
+
+/* --- Botón de detalles --- */
 .btn-detalles {
   display: inline-block;
   margin-top: 0.5rem;
@@ -279,3 +346,4 @@ CAMBIE
   font-size: 0.75rem;
   color: #ccc;
 }
+
