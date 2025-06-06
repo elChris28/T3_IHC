@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cine del Norte</title>
+  <link rel="stylesheet" href="/Frontend/css/InicioStyle.css" />
+
+</head>
+<body>
+
+  <!-- Navbar sin Bootstrap -->
+  <nav class="navbar-custom">
+    <div class="navbar-container">
+      <div class="navbar-left">
+        <a href="Inicio.html" class="navbar-logo">🎬 Cine del Norte</a>
+        <ul class="nav-left">
+          <li><a href="cartelera.html">Cartelera</a></li>
+          <li><a href="Nosotros.html">Nosotros</a></li>
+          <li><a href="promociones.html">Promociones</a></li>
+          <li><a href="horarios.html">Horarios</a></li>
+          <li><a href="Dulceria.html">Dulcería</a></li>
+        </ul>
+      </div>
+      <ul class="nav-right">
+        <li><a href="#">Iniciar Sesión</a></li>
+        <li><a href="/index.html">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>La emoción del cine en tu ciudad</h1>
+    <p>Consulta funciones, estrenos y reserva tu entrada.</p>
+    <a href="cartelera.html" class="btn-primary">Ver Cartelera</a>
+  </section>
+
+  <!-- Cartelera -->
+  <main >
+    
+    <section class="cartelera">
+      <div class="cartelera-header">
+        <h2>Películas</h2>
+        <nav>
+          <a href="#" class="activo">En cartelera</a>
+          <a href="#">Próximos estrenos</a>
+          <a href="#">Festival Al Este</a>
+        </nav>
+      </div>
+
+      <div class="cartelera-contenido">
+        <!-- Película destacada grande -->
+        <div class="pelicula-grande">
+          <img src="/img/pelicula.png" alt="Lilo y Stitch">
+        </div>
+
+        <!-- Grid de películas pequeñas -->
+        <div class="peliculas-chicas">
+          <div class="pelicula-chica">
+            <img src="/img/pelicula2.png" alt="Destino Final">
+          </div>
+          <div class="pelicula-chica">
+            <img src="/img/pelicula3.png" alt="Bailarina">
+            <span class="etiqueta">Estreno</span>
+          </div>
+          <div class="pelicula-chica">
+            <img src="/img/banner peliculas.png" alt="Misión Imposible">
+          </div>
+          <div class="pelicula-chica">
+            <img src="/img/hero.png" alt="Dandadan">
+            <span class="etiqueta">Estreno</span>
+          </div>
+        </div>
+
+        <!-- Botón vertical -->
+        <div class="ver-mas">
+          <a href="#">Ver más<br>películas</a>
+        </div>
+      </div>
+    </section>
+
+
+  <section class="porque-elegirnos">
+              <h2>¿Por qué elegir Cine del Norte?</h2>
+              <div class="beneficios">
+                <div class="beneficio">
+                  🎬
+                  <h3>Cartelera actualizada</h3>
+                  <p>Siempre al día con los estrenos más esperados.</p>
+                </div>
+                <div class="beneficio">
+                  🍿
+                  <h3>Dulcería exclusiva</h3>
+                  <p>Snacks únicos para disfrutar tu película favorita.</p>
+                </div>
+                <div class="beneficio">
+                  💺
+                  <h3>Salas confortables</h3>
+                  <p>Butacas reclinables y excelente sonido.</p>
+                </div>
+              </div>
+  </section>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="logo-cine.png" alt="Cine del Norte" />
+        <p class="logo-text">CINE DEL NORTE</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>PROGRAMACIÓN</h3>
+          <ul>
+            <li><a href="#">Cartelera</a></li>
+            <li><a href="#">Próximamente</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>NOSOTROS</h3>
+          <ul>
+            <li><a href="#">Conócenos</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de Protección de Datos Personales</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>OTROS SERVICIOS</h3>
+          <ul>
+            <li><a href="#">Publicidad</a></li>
+            <li><a href="#">Reportar incidencia</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Todos los derechos reservados a Cine del Norte</p>
+      <div class="redes-sociales">
+        <a href="#" class="icono facebook">📘 Facebook</a>
+        <a href="#" class="icono twitter">🐦 Twitter</a>
+        <a href="#" class="icono instagram">📸 Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scriptInicio.js"></script>
+</body>
+</html>
