@@ -46,3 +46,356 @@ body {
   flex: 1;
   padding: 2em;
 }
+
+/* ============================= */
+/* MAIN CONTENT AREA */
+/* ============================= */
+.main-content {
+    flex-grow: 1;
+    background-color: #f0f2f5; /* Mismo fondo que el body */
+    padding: 2rem;
+}
+
+.main-header {
+    margin-bottom: 2rem;
+    background-color: #fff; /* Fondo blanco para la cabecera del contenido principal */
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar el título */
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    color: #333; /* Color de texto oscuro para el título */
+    margin: 0; /* Eliminar margen predeterminado */
+    /* border-bottom: 2px solid #ddd;  Ya no es necesario con el fondo blanco de la cabecera */
+    padding-bottom: 0;
+}
+
+/* ============================= */
+/* REPORT CARDS GRID */
+/* ============================= */
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.report-card {
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra más sutil */
+    display: flex;
+    flex-direction: column;
+}
+
+.report-card h2 {
+    font-size: 1.5rem;
+    color: #e50914; /* Títulos en rojo */
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.large-number {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333; /* Números grandes en oscuro */
+    margin-bottom: 0.5rem;
+}
+
+.growth-indicator {
+    font-size: 1.1rem;
+    color: #4CAF50; /* Verde para crecimiento positivo */
+}
+
+.growth-indicator.negative {
+    color: #f44336; /* Rojo para crecimiento negativo */
+}
+
+.report-card h3 {
+    font-size: 1.2rem;
+    color: #e50914; /* Títulos secundarios en rojo */
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.report-card ol {
+    padding-left: 20px;
+    margin-top: 0.5rem;
+}
+
+.report-card ol li {
+    margin-bottom: 0.3rem;
+    color: #555; /* Texto de lista en gris oscuro */
+    font-size: 0.95rem;
+}
+
+/* ============================= */
+/* Chart: Ventas por mes (Bar Chart with Axes) */
+/* ============================= */
+.chart-container-with-axes {
+    display: flex;
+    align-items: flex-end; /* Alinea los elementos al final (abajo) */
+    height: 220px;
+    margin-top: 1.5rem;
+    position: relative;
+    padding-left: 60px; /* Espacio para las etiquetas del eje Y */
+    padding-bottom: 25px; /* Espacio para las etiquetas del eje X */
+    border-left: 1px solid #ccc; /* Eje Y más claro */
+    border-bottom: 1px solid #ccc; /* Eje X más claro */
+    box-sizing: border-box;
+}
+
+.y-axis-labels-sales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-right: 10px;
+    font-size: 0.9rem;
+    color: #555; /* Color de las etiquetas del eje Y más oscuro */
+    text-align: right;
+    position: absolute;
+    left: 0;
+    width: 60px;
+    top: 0;
+    height: calc(100% - 25px);
+    transform: translateY(-5px);
+}
+
+.y-axis-labels-sales span {
+    display: block;
+    line-height: 1;
+}
+
+.bar-chart-grid {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.bar-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    position: relative;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 80px;
+}
+
+.bar {
+    width: 40px;
+    background-color: #6091D5; /* Barras azules */
+    border-radius: 3px 3px 0 0;
+    transition: height 0.5s ease-out;
+}
+
+.bar-group .label {
+    font-size: 0.9rem;
+    color: #555; /* Etiquetas de meses en gris oscuro */
+    margin-top: 8px;
+    white-space: nowrap;
+}
+
+/* ============================= */
+/* Chart: Asistencia mensual (Line Chart) */
+/* ============================= */
+.monthly-attendance .chart-placeholder {
+    height: 200px;
+    background-color: #fff; /* Fondo blanco para el placeholder del gráfico */
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc; /* Borde más claro para el gráfico */
+    display: flex; /* Añadir flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: flex-end; /* Alinear al final (abajo) para la base del gráfico */
+}
+
+.line-chart-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 55px; /* Espacio para las etiquetas del eje Y */
+    padding-bottom: 25px; /* Espacio para las etiquetas del eje X (los meses) */
+    padding-top: 15px; /* Pequeño margen superior para el gráfico */
+    box-sizing: border-box;
+}
+
+.line-chart-container svg {
+    position: absolute;
+    top: 0;
+    left: 55px; /* Mueve el SVG 55px a la derecha para dejar espacio a las etiquetas del eje Y */
+    width: calc(100% - 65px); /* Reduce el ancho para compensar el 'left' y dejar un pequeño margen derecho */
+    height: calc(100% - 25px); /* Altura del SVG, descontando espacio de meses */
+    overflow: visible;
+}
+
+/* Líneas de cuadrícula para el eje Y */
+.line-chart-container svg line {
+    stroke: #ccc; /* Líneas de cuadrícula más claras */
+    stroke-width: 0.5;
+    stroke-dasharray: 2,2;
+}
+
+.line-chart-container svg polyline {
+    fill: none;
+    stroke: #6091D5; /* Línea del gráfico azul */
+    stroke-width: 2;
+}
+
+.line-chart-container text {
+    fill: #555; /* Color de las etiquetas de los meses */
+    font-size: 10px;
+    /* text-anchor se maneja en el HTML */
+}
+
+.y-axis-labels {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: calc(100% - 25px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px; /* Espacio entre el texto de la etiqueta y la línea del eje Y */
+    font-size: 0.9rem;
+    color: #555; /* Color de las etiquetas del eje Y más oscuro */
+    text-align: right;
+    width: 55px;
+    box-sizing: border-box;
+}
+
+/* ============================= */
+/* INCIDENTS REPORT TABLE */
+/* ============================= */
+.incidents-report {
+    background-color: #fff; /* Fondo blanco para la tabla de incidencias */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra más sutil */
+    margin-top: 2rem;
+}
+
+.incidents-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.incidents-header h2 {
+    font-size: 1.6rem;
+    color: #e50914; /* Título en rojo */
+    margin: 0;
+}
+
+.incidents-actions {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.btn-export-excel,
+.btn-create-report {
+    background-color: #e50914; /* Botones en rojo */
+    color: white;
+    border: none;
+    padding: 0.9rem 1.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.btn-export-excel:hover,
+.btn-create-report:hover {
+    background-color: #c00811; /* Rojo más oscuro al pasar el ratón */
+}
+
+.excel-icon {
+    /* Mantenemos el SVG en blanco para que contraste con el fondo rojo del botón */
+    content: '';
+    display: inline-block;
+    width: 1.1em;
+    height: 1.1em;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+table thead th {
+    background-color: #f8f8f8; /* Fondo más claro para el encabezado de la tabla */
+    color: #555; /* Texto más oscuro */
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 2px solid #eee; /* Borde más claro */
+    font-size: 1rem;
+}
+
+table tbody td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee; /* Borde más claro */
+    color: #555; /* Texto más oscuro */
+    font-size: 0.95rem;
+}
+
+table tbody tr:hover {
+    background-color: #f5f5f5; /* Fondo más claro al pasar el ratón */
+}
+
+.status-badge {
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white; /* Asegurar texto blanco para badges */
+}
+
+.status-badge.open {
+    background-color: #9e9e9e; /* Gris */
+}
+
+.status-badge.resolved {
+    background-color: #4CAF50; /* Verde */
+}
+
+.status-badge.pending {
+    background-color: #FFC107; /* Amarillo */
+    color: #333; /* Texto oscuro para el amarillo */
+}
+
