@@ -2,13 +2,14 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cine del Norte - Horarios</title>
-  <link rel="stylesheet" href="/Frontend/css/Detalles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cine del Norte</title>
+  <link rel="stylesheet" href="/Frontend/css/Incidencias.css" />
+
 </head>
 <body>
 
-    <!-- Navbar sin Bootstrap -->
+  <!-- Navbar sin Bootstrap -->
     <nav class="navbar-custom">
         <div class="navbar-container">
         <div class="navbar-left">
@@ -29,35 +30,63 @@
     </nav>
 
 
-    <main class="main-content-image">
-        <div class="movie-banner">
-        <img src="/img/trailer.jpg" alt="John Wick Chapter 4" class="movie-poster-large"/>
-        <div class="play-button-overlay"></div>
-        <div class="trailer-label">TRAILER HD</div>
-        </div>
 
-        <div class="movie-details-section">
-        <div class="movie-poster-small-container">
-            <img src="/img/jhonwick2.png" alt="John Wick" class="movie-poster-small" />
-        </div>
-        <div class="info-pelicula-image">
-            <h3 class="titulo-pelicula-image">JOHN WICK: CHAPTER 2</h3>
-            <p><strong>Idioma:</strong> Ingles (Subtitulada)</p>
-            <p><strong>Disponibilidad:</strong> 2D, 3D, IMAX</p>
-            <div class="horarios-image-container">
-            <h4>Horarios:</h4>
-            <p class="sala-name">Sala Principal (IMAX)</p>
-            <div class="horario-buttons-image">
-                <button class="btn-horario-image">6:00 PM</button>
-                <button class="btn-horario-image">8:00 PM</button>
-                <button class="btn-horario-image">9:00 PM</button>
+  <!-- Cartelera -->
+    <main>
+        <section class="contenedor-incidencia">
+        <h2>Registrar Incidencia</h2>
+        <form>
+            <div class="grupo-formulario">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required />
             </div>
+
+            <div class="grupo-formulario">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required />
             </div>
-        </div>
-        </div>
+
+            <div class="grupo-formulario">
+            <label for="correo">Fecha de visita:</label>
+            <input type="date" id="correo" name="correo" required />
+            </div>
+
+            <div class="grupo-formulario">
+            <label for="tipo">Tipo de incidencia:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="">Seleccione una opción</option>
+                <option value="boleto">Problema con boletos</option>
+                <option value="sala">Problema en la sala</option>
+                <option value="dulceria">Problema con dulcería</option>
+                <option value="personal">Atención del personal</option>
+                <option value="otro">Otro</option>
+            </select>
+            </div>
+
+            <div class="grupo-formulario">
+            <label for="mensaje">Descripción de la incidencia:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+
+            <div class="grupo-formulario">
+            <label for="correo">Evidencia:</label>
+            <input type="file" id="correo" name="correo" required />
+            </div>
+
+            <div class="grupo-formulario checkboxes">
+                <label><input type="checkbox" required> Acepto que el cine se comunique conmigo respecto a esta incidencia.</label><br />
+                <label><input type="checkbox" required> He leído la política de privacidad.</label>
+            </div>
+
+            <div class="acciones-formulario">
+            <button type="submit">Enviar Incidencia</button>
+            </div>
+
+        </form>
+        </section>
     </main>
 
-    <!-- Footer -->
+  <!-- Footer -->
     <footer class="footer">
         <div class="footer-top">
         <div class="footer-logo">
@@ -99,5 +128,5 @@
         </div>
     </footer>
 
-  </body>
+</body>
 </html>
