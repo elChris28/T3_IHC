@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cine del Norte</title>
-  <link rel="stylesheet" href="/Frontend/css/promociones.css" />
+  <link rel="stylesheet" href="/Frontend/css/InicioSesion.css" />
 
 </head>
 <body>
 
-    <!-- Navbar sin Bootstrap -->
+  <!-- Navbar sin Bootstrap -->
     <nav class="navbar-custom">
         <div class="navbar-container">
         <div class="navbar-left">
@@ -30,44 +30,36 @@
     </nav>
 
 
-    <!-- Hero -->
-    <section class="hero">
-        <h1>La emoción del cine en tu ciudad</h1>
-        <p>Consulta funciones, estrenos y reserva tu entrada.</p>
-        <a href="cartelera.html" class="btn-primary">Ver Cartelera</a>
+
+  <!-- Cartelera -->
+    <main>
+    <section class="login-container">
+        <h2>Inicio de Sesión</h2>
+        <form >
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required />
+            </div>
+
+            <div class="form-actions">
+                <button type="submit">Iniciar sesión</button>
+            </div>
+
+            <div class="form-links">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <br />
+                <a href="RegistroSesion.html">¿No tienes cuenta? Regístrate</a>
+            </div>
+        </form>
     </section>
-
-    <main class="promociones-main">
-    <div class="promociones-container">
-        
-        <div class="promo-card">
-        <div class="promo-text">
-            <h3 class="promo-title">Nombre de la promoción</h3>
-            <p class="promo-desc">
-            Esta es la descripción de la promoción. Disfruta de nuestros beneficios exclusivos por tiempo limitado.
-            </p>
-            <a href="ruta-al-pdf.pdf" target="_blank" class="promo-link">Términos y condiciones</a>
-        </div>
-        <img src="/img/minion.png" alt="Imagen promoción" class="promo-img" />
-        </div>
-
-                <div class="promo-card">
-        <div class="promo-text">
-            <h3 class="promo-title">Nombre de la promoción</h3>
-            <p class="promo-desc">
-            Esta es la descripción de la promoción. Disfruta de nuestros beneficios exclusivos por tiempo limitado.
-            </p>
-            <a href="ruta-al-pdf.pdf" target="_blank" class="promo-link">Términos y condiciones</a>
-        </div>
-        <img src="/img/mario.png" alt="Imagen promoción" class="promo-img" />
-        </div>
-
-        <!-- Puedes duplicar el bloque .promo-card para más promociones -->
-
-    </div>
     </main>
 
-    <!-- Footer -->
+  <!-- Footer -->
     <footer class="footer">
         <div class="footer-top">
         <div class="footer-logo">
