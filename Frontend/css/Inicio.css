@@ -7,7 +7,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   color: white;
-  background: url('/img/banner peliculas.png') no-repeat center center fixed;
+  background: url('/img/FONDO1.png') no-repeat center center fixed;
   background-size: cover;
   position: relative;
 }
@@ -16,7 +16,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(40, 0, 70, 0.5));
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(17, 4, 27, 0.5));
   backdrop-filter: blur(2px);
   z-index: -1;
 }
@@ -120,14 +120,14 @@ body::before {
 
 .cartelera-header h2 {
   font-size: 2.5rem;
-  color: #aaa;
+  color: #fef4f4;
   font-weight: 900;
 }
 
 .cartelera-header nav a {
   margin: 0 10px;
   text-decoration: none;
-  color: black;
+  color: rgb(235, 235, 235);
   font-weight: bold;
   position: relative;
 }
