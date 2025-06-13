@@ -124,21 +124,28 @@ body {
 .contenedor-cartelera {
   background-color: #111;
   color: #fff;
-  padding: 0.5rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
 }
 
 .contenedor-cartelera h2 {
   font-size: 3rem;
-  margin-bottom: 2rem;
-  color: gold;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  background-color: #FFD700;
+  border: #ffffffe8 5px solid;
+  border-radius: 20px;
+  width: 15%;
+  font-family: "Rowdies", sans-serif;
+
 }
 
 .contenedor-peliculas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 6rem;
+  gap: 5rem;
+  margin: 30px;
 }
 
 /* --- Tarjeta general --- */
@@ -227,6 +234,7 @@ body {
   margin: 1rem 0 0.5rem;
   font-size: 1.8rem;
   color: white;
+  font-family: "Oswald", sans-serif;
 }
 
 
@@ -234,10 +242,12 @@ body {
 .btn-detalles {
   display: inline-block;
   margin-top: 0.5rem;
-  color: #e50914;
+  color: yellow;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
+  font-family: "Bebas Neue", sans-serif;
+
 }
 
 .btn-detalles:hover {
@@ -269,7 +279,7 @@ body {
 }
 
 .footer-logo img {
-  width: 80px;
+  width: 200px;
   margin-bottom: 0.5rem;
 }
 
