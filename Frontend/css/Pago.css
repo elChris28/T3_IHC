@@ -1,66 +1,4 @@
 /* ============================= */
-/*        NAVBAR PERSONALIZADO        */
-/* ============================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-}
-.navbar-custom {
-  background-color: #000;
-  color: #fff;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.navbar-left {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.navbar-logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-}
-
-.nav-left,
-.nav-right {
-  display: flex;
-  gap: 1.2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-left a,
-.nav-right a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.nav-left a:hover,
-.nav-right a:hover {
-  color: #e50914;
-}
-
-/* ============================= */
 /*        MAIN              */
 
 .pago-main {
@@ -84,9 +22,10 @@ body {
 }
 
 .resumen-pedido, .metodo-pago {
+  background-color: rgb(116, 116, 116);
   flex: 1;
   min-width: 300px;
-  border: 1px solid #ccc;
+  border: 1px solid #fefcfc;
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -94,21 +33,22 @@ body {
 }
 
 .resumen-pedido h3, .metodo-pago h3 {
-  color: #b20000;
+  color: rgba(252, 214, 1, 0.644);
   margin-bottom: 1rem;
+  font-size:x-large;
 }
 
 .item-pedido {
   display: flex;
   justify-content: space-between;
-  background-color: #f8f8f8;
+  background-color: #3a3a3a;
   padding: 0.5rem;
   border-radius: 4px;
   margin-bottom: 1rem;
 }
 
 .asientos {
-  color: #006600;
+  color: #23a523;
 }
 
 button {
@@ -132,6 +72,7 @@ button:hover {
       border-radius: 5px;
       font-weight: bold;
       cursor: pointer;
+      text-decoration: none;
     }
 
     .btn-success {
@@ -149,107 +90,3 @@ button:hover {
       font-size: 1.2rem;
       padding: 0.75rem 2rem;
     }
-
-/*===================================================================================*/
-/*======================================= FOOTER ====================================*/
-/*===================================================================================*/
-
-.footer {
-  background-color: #000000;
-  color: white;
-  font-family: 'Arial', sans-serif;
-  
-}
-
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-  border-bottom: 2px solid #111;
-}
-
-.footer-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 200px;
-}
-
-.footer-logo img {
-  width: 80px;
-  margin-bottom: 0.5rem;
-}
-
-.logo-text {
-  font-weight: bold;
-  font-size: 1rem;
-  color: #eee;
-  text-align: center;
-}
-
-.footer-links {
-  display: flex;
-  gap: 3rem;
-  flex: 1;
-  justify-content: space-around;
-}
-
-.footer-column h3 {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-column ul li {
-  margin-bottom: 0.3rem;
-}
-
-.footer-column ul li a {
-  color: #ccc;
-  text-decoration: none;
-}
-
-.footer-column ul li a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.footer-bottom {
-  background-color: #000000;
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.footer-bottom p {
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-}
-
-.redes-sociales {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.icono {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.icono span {
-  display: block;
-  font-size: 0.75rem;
-  color: #ccc;
-}
