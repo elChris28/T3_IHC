@@ -5,20 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Panel Admin - Cine del Norte</title>
   <link rel="stylesheet" href="/Admin/style/Salas.css" />
+  <link rel="stylesheet" href="/Admin/style/estiloBoton.css">
+  <link rel="stylesheet" href="style/navegacionAdmin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <div class="admin-container">
     <aside class="sidebar">
       <h2>Cine del Norte</h2>
       <ul>
-        <li><a href="admin.html">Dashboard</a></li>
-        <li><a href="peliculas.html">Películas</a></li>
-        <li><a href="salas.html">Salas</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="Promociones.html">Promociones</a></li>
-        <li><a href="empleados.html">Empleados</a></li>
-        <li><a href="reportes.html">Reportes</a></li>
-        <li><a href="/index.html">Cerrar Sesión</a></li>
+        <li><a href="admin.html"><i class="fa-solid fa-chart-line"></i>Dashboard</a></li>
+        <li><a href="peliculas.html"><i class="fa-solid fa-video"></i>Películas</a></li>
+        <li><a href="salas.html"><i class="fas fa-tv"></i>Salas</a></li>
+        <li><a href="productos.html"><i class="fas fa-box-open"></i>	Productos</a></li>
+        <li><a href="Promociones.html"><i class="fa-solid fa-tag"></i>Promociones</a></li>
+        <li><a href="empleados.html"><i class="fa-solid fa-users"></i>Empleados</a></li>
+        <li><a href="reportes.html"><i class="fa-solid fa-folder-plus"></i>Reportes</a></li>
+        <li><a href="/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Cerrar Sesión</a></li>
       </ul>
     </aside>
     <main class="content">
@@ -52,11 +55,11 @@
           <label>Horarios disponibles</label>
           <div class="fila">
             <input type="time" id="inputHorario">
-            <button type="button" class="btn-agregar" onclick="agregarHorario()">Agregar Horario</button>
+            <button type="button" class="boton" onclick="agregarHorario()">Agregar Horario</button>
           </div>
           <div id="listaHorarios" class="horarios-lista"></div>
         </div>
-        <button type="submit" class="btn-guardar">Guardar Sala</button>
+        <button type="submit" class="boton">Guardar Sala</button>
       </form>
 
       <h2>Salas agregadas</h2>
