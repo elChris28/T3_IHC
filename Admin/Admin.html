@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Panel Admin - Cine del Norte</title>
   <link rel="stylesheet" href="style/navegacionAdmin.css">
+  <link rel="stylesheet" href="/Admin/style/Admin.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -23,13 +24,190 @@
       </ul>
     </aside>
 
-    <main class="content">
-      <h1>Bienvenido al panel de administración</h1>
-      <p>Resumen general del sistema</p>
-      <!-- Aquí puedes poner tarjetas o métricas del sistema -->
-    </main>
-  </div>
+    <main class="contenido-principal">
+        <header class="encabezado-principal">
+            <h1 class="titulo-pagina">Administrador</h1>
+            <div class="acciones-usuario">
+              <i class="fas fa-bell"></i>
+              <i class="fas fa-cog"></i>
+              <img src="/img/usuarioFondo.png" alt="Avatar Usuario" class="avatar">
+            </div>
+        </header>
 
-  
+        <section class="seccion-principal">
+            <div class="cuadricula-info-general">
+              <div class="info-tarjeta">
+                <div class="info-icono"><i class="fas fa-desktop"></i></div>
+                <span class="info-valor">6</span>
+                <span class="info-descripcion">Salas de cine</span>
+              </div>
+              <div class="info-tarjeta">
+                <div class="info-icono"><i class="fas fa-video"></i></div>
+                <span class="info-valor">10</span>
+                <span class="info-descripcion">Películas en Cartelera</span>
+              </div>
+              <div class="info-tarjeta">
+                <div class="info-icono"><i class="fas fa-users"></i></div>
+                <span class="info-valor">8</span>
+                <span class="info-descripcion">Empleados</span>
+              </div>
+              <div class="info-tarjeta">
+                <div class="info-icono"><i class="fas fa-ticket-alt"></i></div>
+                <span class="info-valor">24</span>
+                <span class="info-descripcion">Entradas vendidas</span>
+              </div>
+            </div>
+
+            <div class="seccion-graficos">
+              <div class="grupo-asistencia">
+                <div class="tarjeta-grafico-grande asistencia-mensual">
+                  <h2>Asistencia Mensual</h2>
+                  <div class="contenedor-grafico-lineas">
+                    <div class="etiquetas-eje-y">
+                      <span>15 k</span>
+                      <span>10 k</span>
+                      <span>05 k</span>
+                      <span>0 k</span>
+                    </div>
+                    <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+                      <polyline points="20,130 50,70 80,110 110,50 140,90 170,100 200,70 230,85 260,60 290,75" />
+                      <line x1="20" y1="35" x2="290" y2="35" stroke="#eee" />
+                      <line x1="20" y1="75" x2="290" y2="75" stroke="#eee" />
+                      <line x1="20" y1="115" x2="290" y2="115" stroke="#eee" />
+                    </svg>
+                    <div class="etiquetas-eje-x">
+                       <span>May</span>
+                       <span>Jun</span>
+                       <span>Jul</span>
+                       <span>Ago</span>
+                       <span>Sep</span>
+                       <span>Oct</span>
+                       <span>Nov</span>
+                       <span>Dic</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tarjeta-grafico-pequeno asistencia-semanal">
+                  <h2>Asistencia Semanal</h2>
+                  <div class="contenedor-grafico-lineas-semanal">
+                    <div class="etiquetas-eje-y-semanal">
+                      <span>2500</span>
+                      <span>2000</span>
+                      <span>1500</span>
+                      <span>1000</span>
+                      <span>0</span>
+                  </div>
+                  <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+                    <polyline points="10,130 70,70 100,40 140,80 180,30 220,20 260,60" />
+                    <line x1="20" y1="20" x2="260" y2="20" stroke="#eee" />
+                    <line x1="20" y1="50" x2="260" y2="50" stroke="#eee" />
+                    <line x1="20" y1="80" x2="260" y2="80" stroke="#eee" />
+                    <line x1="20" y1="110" x2="260" y2="110" stroke="#eee" />
+                    <line x1="20" y1="140" x2="260" y2="140" stroke="#eee" />
+                  </svg>
+                  <div class="etiquetas-eje-x-semanal">
+                    <span>Lun</span>
+                    <span>Mar</span>
+                    <span>Mié</span>
+                    <span>Jue</span>
+                    <span>Vie</span>
+                    <span>Sáb</span>
+                    <span>Dom</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                
+          <div class="tarjeta-grafico-pequeno peliculas-mas-vistas">
+            <h2>Películas más vistas</h2>
+            <div class="barras-peliculas">
+              <div class="pelicula-elemento"> <span>Jhon Wick</span>
+                <div class="barra-progreso-pelicula">
+                  <div class="progreso" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="pelicula-elemento"> <span>Sherk</span>
+                <div class="barra-progreso-pelicula">
+                  <div class="progreso" style="width: 70%;"></div>
+                </div>
+              </div>
+              <div class="pelicula-elemento"> <span>Terremoto</span>
+                <div class="barra-progreso-pelicula">
+                  <div class="progreso" style="width: 55%;"></div>
+                </div>
+              </div>
+              <div class="pelicula-elemento"> <span>Sipnosis</span>
+                <div class="barra-progreso-pelicula">
+                  <div class="progreso" style="width: 40%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="cuadricula-reportes">
+            <div class="tarjeta-reporte ventas-por-mes">
+              <h2>Ventas por mes</h2>
+              <div class="contenedor-grafico-con-ejes">
+                  <div class="etiquetas-eje-y-ventas">
+                    <span>$60 K</span>
+                    <span>$40 K</span>
+                    <span>$20 K</span>
+                    <span>$0 K</span>
+                  </div>
+                  <div class="cuadricula-grafico-barras">
+                    <div class="grupo-barra">
+                      <div class="barra" style="height: 50%;"></div>
+                      <span class="etiqueta">May</span>
+                    </div>
+                    <div class="grupo-barra">
+                      <div class="barra" style="height: 70%;"></div>
+                      <span class="etiqueta">Jun</span>
+                    </div>
+                    <div class="grupo-barra">
+                      <div class="barra" style="height: 60%;"></div>
+                      <span class="etiqueta">Jul</span>
+                    </div>
+                    <div class="grupo-barra">
+                      <div class="barra" style="height: 80%;"></div>
+                      <span class="etiqueta">Dic</span>
+                    </div>
+                    <div class="grupo-barra">
+                      <div class="barra" style="height: 90%;"></div>
+                      <span class="etiqueta">Abr</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tarjeta-reporte">
+                <h2>Personal</h2>
+                <ul>
+                  <li><i class="fas fa-user-tie"></i> Ricardo Gómez - Gerente General</li>
+                  <li><i class="fas fa-user-cog"></i> Sofía Torres - Jefe de Operaciones</li>
+                  <li><i class="fas fa-cash-register"></i> Luis Mendoza - Cajero Principal</li>
+                  <li><i class="fas fa-ticket-alt"></i> Valeria Castro - Atención al Cliente</li>
+                  <li><i class="fas fa-broom"></i> Carlos Ruiz - Personal de Limpieza</li>
+                  <li><i class="fas fa-popcorn"></i> Ana López - Encargada de Dulcería</li>
+                  <li><i class="fas fa-tools"></i> Javier Ramos - Mantenimiento</li>
+                  <li><i class="fas fa-video"></i> Elena Vargas - Proyeccionista</li>
+                </ul>
+              </div>
+
+              <div class="tarjeta-reporte entradas-vendidas-detalle">
+                <h2>Entradas vendidas</h2>
+                  <div class="valor-entradas">260,760</div>
+                  <p class="variacion-anual">-3% respecto al año pasado</p>
+                  <h3>Películas más taquilleras</h3>
+                  <ul class="lista-taquilleras">
+                    <li>1. Venom 3</li>
+                    <li>2. Aquaman</li>
+                    <li>3. Vaguito</li>
+                  </ul>
+                </div>
+              </section>
+          </section>
+      </main>
+  </div>
 </body>
 </html>

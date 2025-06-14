@@ -1,51 +1,479 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
-}
-.sidebar ul li a i {
-  margin-right: 8px;
-}
-.admin-container {
-  display: flex;
-  height: 100vh;
+/* ============================= */
+/* ÁREA DE CONTENIDO PRINCIPAL */
+/* ============================= */
+.contenido-principal {
+    flex-grow: 1;
+    background-color: #f0f2f5;
+    padding: 2rem;
 }
 
-.sidebar {
-  width: 220px;
-  background-color: #111;
-  color: white;
-  padding: 1em;
+.encabezado-principal {
+    margin-bottom: 2rem;
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.sidebar h2 {
-  font-size: 1.5em;
-  margin-bottom: 1em;
-  text-align: center;
+.titulo-pagina {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0;
 }
 
-.sidebar ul {
-  list-style: none;
-  padding: 0;
+.acciones-usuario {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
 }
 
-.sidebar ul li {
-  margin: 1em 0;
+.acciones-usuario i {
+    font-size: 1.4em;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
-.sidebar ul li a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 0.5em;
-  transition: background 0.3s;
+.acciones-usuario i:hover {
+    color: gold;
 }
 
-.sidebar ul li a:hover {
-  background-color: goldenrod;
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    object-fit: cover;
 }
 
-.content {
-  flex: 1;
-  padding: 2em;
+/* ============================= */
+/* SECCIÓN PRINCIPAL (Cuadros y Gráficos) */
+/* ============================= */
+.seccion-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+/* Estilos para los nuevos cuadros de información general */
+.cuadricula-info-general {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5em;
+}
+
+.info-tarjeta {
+    background-color: #ffffff;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    border: 1px solid #eee;
+}
+
+.info-icono {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: rgb(0, 0, 0);
+}
+
+.info-valor {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.2em;
+}
+
+.info-descripcion {
+    font-size: 1em;
+    color: #555;
+}
+
+/* ============================= */
+/* SECCIÓN DE GRÁFICOS (SUPERIOR) */
+/* ============================= */
+.seccion-graficos {
+    display: grid;
+    /* Ajustado para 3 columnas inicialmente, con flexibilidad */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+/* Contenedor para los dos gráficos de asistencia (mensual y semanal) */
+.grupo-asistencia {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas para los gráficos de asistencia dentro del grupo */
+    gap: 2em; /* Espacio entre los gráficos dentro del grupo */
+    grid-column: span 2; /* Ocupa 2 columnas de la .seccion-graficos */
+}
+
+.tarjeta-grafico-grande,
+.tarjeta-grafico-pequeno {
+    background-color: #ffffff;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: #333;
+    border: 1px solid #eee;
+}
+
+.encabezado-grafico {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.tarjeta-grafico-grande h2,
+.tarjeta-grafico-pequeno h2 {
+    font-size: 1.4em;
+    color: #000000;
+    margin: 0;
+}
+
+
+
+.area-grafico {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.area-grafico img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Estilos para Películas más Vistas */
+.peliculas-mas-vistas .barras-peliculas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre cada película */
+    margin-top: 1.5em;
+}
+
+.peliculas-mas-vistas .pelicula-elemento { /* CAMBIADO DE .pelicula-item */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.peliculas-mas-vistas .pelicula-elemento span { /* CAMBIADO DE .pelicula-item span */
+    flex-basis: 90px;
+    min-width: 90px;
+    font-weight: bold;
+    color: #333;
+}
+
+.peliculas-mas-vistas .barra-progreso-pelicula {
+    flex-grow: 1;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.peliculas-mas-vistas .barra-progreso-pelicula .progreso {
+    height: 100%;
+    background-color: #6091D5;
+    border-radius: 10px;
+    transition: width 0.5s ease-out;
+}
+
+/* ============================= */
+/* Gráfico: Asistencia mensual (Gráfico de Líneas) */
+/* ============================= */
+.asistencia-mensual .contenedor-grafico-lineas {
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 1em;
+}
+
+.contenedor-grafico-lineas svg {
+    position: absolute;
+    top: 15px;
+    left: 55px;
+    right: 15px;
+    bottom: 30px;
+    width: calc(100% - 70px);
+    height: calc(100% - 45px);
+    overflow: visible;
+}
+
+.contenedor-grafico-lineas svg polyline {
+    fill: none;
+    stroke: #6091D5;
+    stroke-width: 2;
+}
+
+.contenedor-grafico-lineas svg line {
+    stroke: #ccc;
+    stroke-width: 0.5;
+    stroke-dasharray: 2,2;
+}
+
+.etiquetas-eje-x {
+    position: absolute;
+    bottom: 4px;
+    left: 55px;
+    width: calc(100% - 70px);
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.9em;
+    color: #555;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.etiquetas-eje-x span {
+    display: block;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.etiquetas-eje-y {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: calc(100% - 53px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: right;
+    width: 55px;
+    box-sizing: border-box;
+}
+
+/* ============================= */
+/* Gráfico: Asistencia Semanal (Gráfico de Líneas) */
+/* ============================= */
+.asistencia-semanal .contenedor-grafico-lineas-semanal {
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 1em;
+}
+
+.contenedor-grafico-lineas-semanal svg {
+    position: absolute;
+    top: 15px;
+    left: 55px;
+    right: 15px;
+    bottom: 30px;
+    width: calc(100% - 70px);
+    height: calc(100% - 45px);
+    overflow: visible;
+}
+
+.contenedor-grafico-lineas-semanal svg polyline {
+    fill: none;
+    stroke: #FF9800;
+    stroke-width: 2;
+}
+
+.contenedor-grafico-lineas-semanal svg line {
+    stroke: #eee;
+    stroke-width: 0.5;
+    stroke-dasharray: 2,2;
+}
+
+.etiquetas-eje-x-semanal {
+    position: absolute;
+    bottom: 4px;
+    left: 55px;
+    width: calc(100% - 70px);
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.9em;
+    color: #555;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.etiquetas-eje-x-semanal span {
+    display: block;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.etiquetas-eje-y-semanal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: calc(100% - 53px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: right;
+    width: 55px;
+    box-sizing: border-box;
+}
+
+
+/* ============================= */
+/* CUADRÍCULA DE TARJETAS DE REPORTE */
+/* ============================= */
+.cuadricula-reportes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tarjeta-reporte {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+}
+
+.tarjeta-reporte h2 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Gráfico: Ventas por mes (Gráfico de Barras con Ejes) */
+.ventas-por-mes .contenedor-grafico-con-ejes {
+    display: flex;
+    align-items: flex-end;
+    height: 220px;
+    margin-top: 1.5rem;
+    position: relative;
+    padding-left: 60px;
+    padding-bottom: 25px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.ventas-por-mes .etiquetas-eje-y-ventas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-right: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    width: 60px;
+    top: 0;
+    height: calc(100% - 25px);
+    transform: translateY(-5px);
+}
+
+.ventas-por-mes .etiquetas-eje-y-ventas span {
+    display: block;
+    line-height: 1;
+}
+
+.ventas-por-mes .cuadricula-grafico-barras {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.ventas-por-mes .grupo-barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    position: relative;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 80px;
+}
+
+.ventas-por-mes .barra {
+    width: 40px;
+    background-color: #6091D5;
+    border-radius: 3px 3px 0 0;
+    transition: height 0.5s ease-out;
+}
+
+.ventas-por-mes .grupo-barra .etiqueta {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 8px;
+    white-space: nowrap;
+}
+
+/* Listas generales en tarjetas de reporte (Estrellas del Personal, Órdenes y Suministros) */
+.tarjeta-reporte ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1em;
+}
+
+.tarjeta-reporte ul li {
+    display: flex;
+    align-items: center;
+    padding: 0.6em 0;
+    border-bottom: 1px solid #eee;
+}
+
+.tarjeta-reporte ul li:last-child {
+    border-bottom: none;
+}
+
+.tarjeta-reporte ul li i {
+    margin-right: 10px;
+    color: #6091D5;
+}
+
+.tarjeta-reporte .porcentaje {
+    font-weight: bold;
+    color: #6091D5;
+    margin-left: auto;
 }
