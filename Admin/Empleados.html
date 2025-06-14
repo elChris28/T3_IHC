@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <div class="admin-container">
-    <aside class="sidebar">
+  <div class="interfazAdmin">
+    <aside class="barraLateral">
       <h2>Cine del Norte</h2>
       <ul>
         <li><a href="admin.html"><i class="fa-solid fa-chart-line"></i>Dashboard</a></li>
         <li><a href="peliculas.html"><i class="fa-solid fa-video"></i>Películas</a></li>
         <li><a href="salas.html"><i class="fas fa-tv"></i>Salas</a></li>
-        <li><a href="productos.html"><i class="fas fa-box-open"></i>	Productos</a></li>
+        <li><a href="productos.html"><i class="fas fa-box-open"></i>Productos</a></li>
         <li><a href="Promociones.html"><i class="fa-solid fa-tag"></i>Promociones</a></li>
         <li><a href="empleados.html"><i class="fa-solid fa-users"></i>Empleados</a></li>
         <li><a href="reportes.html"><i class="fa-solid fa-folder-plus"></i>Reportes</a></li>
@@ -24,61 +24,64 @@
       </ul>
     </aside>
 
-    <main class="content">
+    <main class="contenido-principal">
       <header class="encabezado-principal">
         <h1>Empleado</h1>
+        <div class="acciones-usuario">
+          <i class="fas fa-bell"></i>
+          <i class="fas fa-cog"></i>
+          <img src="/img/usuarioFondo.png" class="avatar">
+        </div>
       </header>
-      <form id="formEmpleado" class="form-empleado">
-        <div class="fila-flex">
-          <div class="flex-1">
+      <form class="formulario-empleado">
+        <div>
+          <div>
             <label><strong>Nombre completo:</strong></label><br/>
-            <input type="text" placeholder="Nombre" class="campo-input" required />
+            <input type="text" placeholder="Nombre" class="campo-formulario" required />
           </div>
-          <div class="flex-1">
-            <label><strong>&nbsp;</strong></label><br />
-            <input type="text" placeholder="Apellido" class="campo-input" required />
+          <div>
+            <br>
+            <input type="text" placeholder="Apellido" class="campo-formulario" required />
           </div>
         </div>
-
-        <div class="mb-3">
+        <div>
           <label><strong>DNI:</strong></label><br />
-          <input type="text" id="dni" class="campo-input" placeholder="DNI" required />
+          <input type="text" id="dni" class="campo-formulario" placeholder="DNI" required />
         </div>
         <div class="mb-3">
           <label><strong>Correo Electrónico:</strong></label><br />
-          <input type="email" id="correoElectronico" class="campo-input" placeholder="Correo electrónico" required />
+          <input type="email" id="correoElectronico" class="campo-formulario" placeholder="Correo electrónico" required />
         </div>
         <div class="mb-3">
           <label><strong>Contraseña:</strong></label><br />
-          <input type="password" id="contrasena" class="campo-input" placeholder="Contraseña" required />
+          <input type="password" id="contrasena" class="campo-formulario" placeholder="Contraseña" required />
         </div>
         <div class="mb-3">
           <label><strong>Cargo:</strong></label><br />
-          <input type="text" id="cargo" class="campo-input" placeholder="Cargo" />
+          <input type="text" id="cargo" class="campo-formulario" placeholder="Cargo" />
         </div>
         <div class="mb-3">
           <label><strong>Turno:</strong></label><br />
-          <input type="text" id="turno" class="campo-input" placeholder="Turno" />
+          <input type="text" id="turno" class="campo-formulario" placeholder="Turno" />
         </div>
         <div class="mb-3 flex-row-center gap-3">
           <img
-            id="previewFoto"
             src="/img/usuarioFondo.png"
-            alt="Foto del personal"
+            alt=""
             class="foto-personal"
           />
           <div>
-            <label for="fotoPersonal" class="boton">
+            <label class="boton">
               📁 Foto del personal
             </label>
-            <input type="file" id="fotoPersonal" accept="image/*" class="input-file" />
+            <input type="file" accept="image/*" class="campo-archivo" />
           </div>
         </div>
 
         <button type="submit" class="boton">Agregar</button>
       </form>
 
-      <h4 class="mt-5">Personal Asignado:</h4>
+      <h2>Personal Asignado:</h2>
       <table class="tabla-personal">
         <thead class="tabla-header">
           <tr>
@@ -91,7 +94,7 @@
             <th>Acciones</th>
           </tr>
         </thead>
-        <tbody id="tablaPersonal"></tbody>
+        <tbody></tbody>
       </table>
     </main>
   </div>

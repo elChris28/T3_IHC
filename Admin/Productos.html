@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <div class="admin-container">
-    <aside class="sidebar">
+  <div class="interfazAdmin">
+    <aside class="barraLateral">
       <h2>Cine del Norte</h2>
       <ul>
         <li><a href="admin.html"><i class="fa-solid fa-chart-line"></i>Dashboard</a></li>
         <li><a href="peliculas.html"><i class="fa-solid fa-video"></i>Películas</a></li>
         <li><a href="salas.html"><i class="fas fa-tv"></i>Salas</a></li>
-        <li><a href="productos.html"><i class="fas fa-box-open"></i>	Productos</a></li>
+        <li><a href="productos.html"><i class="fas fa-box-open"></i>Productos</a></li>
         <li><a href="Promociones.html"><i class="fa-solid fa-tag"></i>Promociones</a></li>
         <li><a href="empleados.html"><i class="fa-solid fa-users"></i>Empleados</a></li>
         <li><a href="reportes.html"><i class="fa-solid fa-folder-plus"></i>Reportes</a></li>
@@ -24,30 +24,35 @@
       </ul>
     </aside>
 
-    <main class="content">
+    <main class="contenido-principal">
       <header class="encabezado-principal">
         <h1>Productos</h1>
+        <div class="acciones-usuario">
+          <i class="fas fa-bell"></i>
+          <i class="fas fa-cog"></i>
+          <img src="/img/usuarioFondo.png" class="avatar">
+        </div>
       </header>
-      <form id="formDulce" class="formulario">
+      <form class="formulario">
         <div class="fila">
-          <input type="text" id="nombre" class="campo-input" placeholder="Nombre del producto" required />
-          <input type="text" id="descripcion" class="campo-input" placeholder="Descripción" required />
+          <input type="text" class="campo-formulario" placeholder="Nombre del producto" required />
+          <input type="text" class="campo-formulario" placeholder="Descripción" required />
         </div>
         <div class="fila">
-          <input type="number" id="precio" class="campo-input" placeholder="Precio S/." required />
-          <select id="categoria" class="campo-select" required>
+          <input type="number" class="campo-formulario" placeholder="Precio S/." required />
+          <select class="campo-select" required>
             <option value="">Categoría</option>
             <option value="Combos">Combos</option>
             <option value="Snacks">Snacks</option>
             <option value="Bebidas">Bebidas</option>
             <option value="Otros">Otros</option>
           </select>
-          <input type="file" id="imagen" class="campo-input" accept="image/*" required />
+          <input type="file" class="campo-formulario" accept="image/*" required />
         </div>
         <button type="submit" class="boton">Agregar Producto</button>
       </form>
 
-      <div id="productosPorCategoria"></div>
+      <div></div>
     </main>
   </div>
 

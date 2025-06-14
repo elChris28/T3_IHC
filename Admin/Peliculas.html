@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <div class="admin-container">
-    <aside class="sidebar">
+  <div class="interfazAdmin">
+    <aside class="barraLateral">
       <h2>Cine del Norte</h2>
       <ul>
         <li><a href="admin.html"><i class="fa-solid fa-chart-line"></i>Dashboard</a></li>
@@ -24,22 +24,25 @@
       </ul>
     </aside>
 
-    <main class="content">
+    <main class="contenido-principal">
       <header class="encabezado-principal">
         <h1>Pelicula</h1>
+        <div class="acciones-usuario">
+          <i class="fas fa-bell"></i>
+          <i class="fas fa-cog"></i>
+          <img src="/img/usuarioFondo.png" class="avatar">
+        </div>
       </header>
-      <form id="formPelicula" class="formulario">
+      <form class="formulario">
         <div class="fila">
           <label><strong>Título:</strong></label>
-          <input type="text" id="titulo" class="campo-input" placeholder="Título" required>
+          <input type="text" id="titulo" class="campo-formulario" placeholder="Título" required>
           <label><strong>Género:</strong></label>
-          <input type="text" id="genero" class="campo-input" placeholder="Género" required>
-        </div>
-        <div class="fila">
+          <input type="text" id="genero" class="campo-formulario" placeholder="Género" required>
           <label><strong>Duración:</strong></label>
-          <input type="text" id="duracion" class="campo-input" placeholder="Duración" required>
+          <input type="text" id="duracion" class="campo-formulario" placeholder="Duración" required>
           <label><strong>Clasificación:</strong></label>
-          <input type="text" id="clasificacion" class="campo-input" placeholder="Clasificación" required>
+          <input type="text" id="clasificacion" class="campo-formulario" placeholder="Clasificación" required>
           <label><strong>Idioma:</strong></label>
           <select id="idioma" class="campo-select" required>
             <option value="">Selecciona idioma</option>
@@ -48,34 +51,28 @@
           </select>
         </div>
         <label><strong>Sinopsis:</strong></label>
-        <div class="campo-textarea">
-          <textarea id="sinopsis" class="campo-textarea" placeholder="Sinopsis" rows="3" required></textarea>
+        <div>
+          <textarea id="sinopsis" placeholder="Sinopsis" rows="3" required></textarea>
         </div>
         <label><strong>URL del tráiler:</strong></label>
-        <div class="campo-url">
-          <input type="url" id="trailer" name="trailer" class="campo-input" placeholder="https://youtu.be/..." />
+        <div>
+          <input type="url" class="campo-formulario" placeholder="https://youtu.be/..." />
         </div>
         <label><strong>Disponibilidad:</strong></label>
-        <div class="disponibilidad">
-          <label><input type="checkbox" id="2d" value="2D" /> 2D</label>
-          <label><input type="checkbox" id="3d" value="3D" /> 3D</label>
-          <label><input type="checkbox" id="vip" value="VIP" /> VIP</label>
-          <label><input type="checkbox" id="imax" value="IMAX" /> IMAX</label>
+        <div>
+          <label><input type="checkbox"/> 2D</label>
+          <label><input type="checkbox"/> 3D</label>
+          <label><input type="checkbox"/> VIP</label>
+          <label><input type="checkbox"/> IMAX</label>
         </div>
         <label><strong>Portada:</strong></label>
-        <div class="campo-file">
-          <input type="file" id="poster" class="campo-input" accept="image/*" required>
-          <img id="previewPoster" class="preview-img" style="display: none;" />
+        <div>
+          <input type="file" class="campo-formulario" accept="image/*" required>
         </div>
-
         <button type="submit" class="boton">Agregar</button>
       </form>
-
       <h2>Películas agregadas</h2>
-      <div id="listaPeliculas" class="peliculas-grid"></div>
     </main>
   </div>
-
-
 </body>
 </html>

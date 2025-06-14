@@ -17,7 +17,7 @@ h1 {
   flex-wrap: wrap;
 }
 
-.campo-input,
+.campo-formulario,
 .campo-select {
   flex: 1;
   padding: 10px;

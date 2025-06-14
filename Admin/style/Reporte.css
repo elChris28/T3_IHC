@@ -1,13 +1,4 @@
 /* ============================= */
-/* ÁREA DE CONTENIDO PRINCIPAL */
-/* ============================= */
-.contenido-principal {
-    flex-grow: 1;
-    background-color: #f0f2f5; /* Mismo fondo que el body */
-    padding: 2rem;
-}
-
-/* ============================= */
 /* SECCIÓN DE RESUMEN DE INCIDENCIAS (KPIs) */
 /* ============================= */
 .resumen-incidencias {

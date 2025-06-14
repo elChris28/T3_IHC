@@ -3,24 +3,14 @@ h1 {
 }
 
 /* Formulario */
-.form-empleado {
+.formulario-empleado {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.fila-flex {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.flex-1 {
-  flex: 10%;
-}
-
-.campo-input {
+.campo-formulario {
   width: 90%;
   margin-top: 10px;
   padding: 10px;
@@ -78,6 +68,6 @@ h1 {
   gap: 12px;
 }
 
-.input-file {
+.campo-archivo {
   display: none;
 }
