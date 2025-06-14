@@ -6,7 +6,6 @@
   <title>Panel Admin - Cine del Norte</title>
   <link rel="stylesheet" href="/Admin/style/Peliculas.css" />
   <link rel="stylesheet" href="style/navegacionAdmin.css">
-  <link rel="stylesheet" href="/Admin/style/estiloBoton.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -29,34 +28,39 @@
       <h1>Agregar nueva película</h1>
       <form id="formPelicula" class="formulario">
         <div class="fila">
+          <label><strong>Título:</strong></label>
           <input type="text" id="titulo" class="campo-input" placeholder="Título" required>
+          <label><strong>Género:</strong></label>
           <input type="text" id="genero" class="campo-input" placeholder="Género" required>
         </div>
         <div class="fila">
+          <label><strong>Duración:</strong></label>
           <input type="text" id="duracion" class="campo-input" placeholder="Duración" required>
+          <label><strong>Clasificación:</strong></label>
           <input type="text" id="clasificacion" class="campo-input" placeholder="Clasificación" required>
+          <label><strong>Idioma:</strong></label>
           <select id="idioma" class="campo-select" required>
             <option value="">Selecciona idioma</option>
             <option value="Doblada">Doblada</option>
             <option value="Subtitulada">Subtitulada</option>
           </select>
         </div>
+        <label><strong>Sinopsis:</strong></label>
         <div class="campo-textarea">
           <textarea id="sinopsis" class="campo-textarea" placeholder="Sinopsis" rows="3" required></textarea>
         </div>
+        <label><strong>URL del tráiler:</strong></label>
         <div class="campo-url">
-          <label for="trailer">URL del tráiler:</label>
           <input type="url" id="trailer" name="trailer" class="campo-input" placeholder="https://youtu.be/..." />
         </div>
-
+        <label><strong>Disponibilidad:</strong></label>
         <div class="disponibilidad">
-          <label>Disponibilidad</label><br>
           <label><input type="checkbox" id="2d" value="2D" /> 2D</label>
           <label><input type="checkbox" id="3d" value="3D" /> 3D</label>
           <label><input type="checkbox" id="vip" value="VIP" /> VIP</label>
           <label><input type="checkbox" id="imax" value="IMAX" /> IMAX</label>
         </div>
-
+        <label><strong>Portada:</strong></label>
         <div class="campo-file">
           <input type="file" id="poster" class="campo-input" accept="image/*" required>
           <img id="previewPoster" class="preview-img" style="display: none;" />
