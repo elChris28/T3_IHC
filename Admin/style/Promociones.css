@@ -1,4 +1,3 @@
-/* FORMULARIO */
 .formulario-promocion {
   max-width: 600px;
 }
@@ -19,7 +18,6 @@
   border: 1px solid #000000;
 }
 
-/* GRID PROMOCIONES */
 .contenedor-promociones {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -27,18 +25,3 @@
   margin-top: 20px;
 }
 
-/* BOTÓN */
-.boton-promocion {
-  background-color: #e50914;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.boton-promocion:hover {
-  background-color: #b71c1c;
-}

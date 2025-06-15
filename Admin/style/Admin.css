@@ -1,11 +1,9 @@
-
 .seccion-principal {
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
 
-/* Estilos para los nuevos cuadros de información general */
 .cuadricula-info-general {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -44,22 +42,17 @@
     color: #555;
 }
 
-/* ============================= */
-/* SECCIÓN DE GRÁFICOS (SUPERIOR) */
-/* ============================= */
 .seccion-graficos {
     display: grid;
-    /* Ajustado para 3 columnas inicialmente, con flexibilidad */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2em;
 }
 
-/* Contenedor para los dos gráficos de asistencia (mensual y semanal) */
 .grupo-asistencia {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas para los gráficos de asistencia dentro del grupo */
-    gap: 2em; /* Espacio entre los gráficos dentro del grupo */
-    grid-column: span 2; /* Ocupa 2 columnas de la .seccion-graficos */
+    grid-template-columns: 1fr 1fr; 
+    gap: 2em; 
+    grid-column: span 2; 
 }
 
 .tarjeta-grafico-grande,
@@ -103,15 +96,14 @@
     object-fit: contain;
 }
 
-/* Estilos para Películas más Vistas */
 .peliculas-mas-vistas .barras-peliculas {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espacio entre cada película */
+    gap: 15px; 
     margin-top: 1.5em;
 }
 
-.peliculas-mas-vistas .nombre-Pelicula { /* CAMBIADO DE .pelicula-item */
+.peliculas-mas-vistas .nombre-Pelicula { 
     display: flex;
     align-items: center;
     gap: 10px;
@@ -119,7 +111,7 @@
     color: #555;
 }
 
-.peliculas-mas-vistas .nombre-Pelicula span { /* CAMBIADO DE .pelicula-item span */
+.peliculas-mas-vistas .nombre-Pelicula span { 
     flex-basis: 90px;
     min-width: 90px;
     font-weight: bold;
@@ -143,9 +135,6 @@
     transition: width 0.5s ease-out;
 }
 
-/* ============================= */
-/* Gráfico: Asistencia mensual (Gráfico de Líneas) */
-/* ============================= */
 .asistencia-mensual .contenedor-grafico-lineas {
     height: 200px;
     background-color: #fff;
@@ -218,9 +207,6 @@
     box-sizing: border-box;
 }
 
-/* ============================= */
-/* Gráfico: Asistencia Semanal (Gráfico de Líneas) */
-/* ============================= */
 .asistencia-semanal .contenedor-grafico-lineas-semanal {
     height: 200px;
     background-color: #fff;
@@ -294,9 +280,6 @@
 }
 
 
-/* ============================= */
-/* CUADRÍCULA DE TARJETAS DE REPORTE */
-/* ============================= */
 .cuadricula-reportes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -321,7 +304,6 @@
     margin-bottom: 1rem;
 }
 
-/* Gráfico: Ventas por mes (Gráfico de Barras con Ejes) */
 .ventas-por-mes .contenedor-grafico-con-ejes {
     display: flex;
     align-items: flex-end;
@@ -394,7 +376,6 @@
     white-space: nowrap;
 }
 
-/* Listas generales en tarjetas de reporte (Estrellas del Personal, Órdenes y Suministros) */
 .tarjeta-reporte ul {
     list-style: none;
     padding: 0;
