@@ -138,9 +138,9 @@ h2 {
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 5px;
-  border: 2px solid red;
-  color: white;
-  background-color: #222323;
+  border: 2px solid gold;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
 }
 
 .filtro-horarios select option {
