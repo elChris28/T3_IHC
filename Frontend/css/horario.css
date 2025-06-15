@@ -30,7 +30,6 @@
 }
 
 /* Texto dentro de la sección hero */
-
 .hero h1 {
   font-size: 3.5rem;      /* Tamaño de la letra */
   line-height: 1.2;       /* Altura de la línea */
@@ -74,7 +73,6 @@ h2 {
 }
 
 /* Tarjeta de Película */
-
 .container {
   display: flex;
   flex-direction: column;
@@ -166,4 +164,38 @@ h2 {
 .btn-horario:hover {
   background-color: red;
   color: black;
+}
+
+
+/* ============================= */
+/* Estilos para el filtro de horarios */
+/* ============================= */
+.filtro-horarios {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.filtro-horarios label {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.filtro-horarios select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid red;
+  color: white;
+  background-color: #222323;
+}
+
+.filtro-horarios select option {
+  color: black;
+}
+
+
+/* Mostrar todos los horarios por defecto */
+.bloque-sala button {
+  display: inline-block;
 }
