@@ -24,7 +24,7 @@
 /* Botón dentro de la sección hero */
 .btn-principal {
   padding: 0.8rem 1.5rem;
-  background-color: #e50914;
+  background-color: #e2b436ab;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -34,7 +34,7 @@
 }
 
 .btn-principal:hover {
-  background-color: #b00610;
+  background-color: #e1aa00;
 }
 
 
