@@ -1,76 +1,75 @@
-    /*        NAVBAR PERSONALIZADO        */
-    * {
+* {
     margin: 0;
     padding: 0;
-    }
+}
 
-    body {
+body {
     font-family: 'Segoe UI', sans-serif;
     color: white;
     background: url('/img/fondoInterfazCliente.png') no-repeat center center fixed;
     background-size: cover;
     position: relative;
-    }
+}
 
-    body::before {
+body::before {
     content: "";
     position: fixed;
     inset: 0;
     background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(40, 0, 70, 0.5));
     backdrop-filter: blur(2px);
     z-index: -1;
-    }
+}
 
     /* Barra de navegación */
-    .barra-navegacion {
+.barra-navegacion {
     background-color: #000;
     color: #fff;
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
     z-index: 1000;
-    }
+}
 
     /* Contenedor general de la barra */
-    .contenedor-barra {
+.contenedor-barra {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    }
+}
 
     /* Sección de la barra a la izquierda */
-    .barra-izquierda {
+.barra-izquierda {
     display: flex;
     align-items: center;
     gap: 2rem;
-    }
+}
 
     /* Estilo del logo */
-    .logo-barra {
+.logo-barra {
     font-size: 1.6rem;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
-    }
+}
 
     /* Estilos para los menús de la izquierda y la derecha */
-    .nav-izquierda, .nav-derecha {
+.nav-izquierda, .nav-derecha {
     display: flex;
     gap: 1.2rem;
     list-style: none;
     margin: 0;
     padding: 0;
-    }
+}
 
     /* Enlaces dentro de la barra */
-    .nav-izquierda a, .nav-derecha a {
+.nav-izquierda a, .nav-derecha a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    }
+}
 
     /* Efecto al pasar el ratón sobre los enlaces */
-    .nav-izquierda a:hover, .nav-derecha a:hover {
-    color: #e50914;
-    }
+.nav-izquierda a:hover, .nav-derecha a:hover {
+    color: gold;
+}

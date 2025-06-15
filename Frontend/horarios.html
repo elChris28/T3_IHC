@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cine del Norte - Horarios</title>
   <link rel="stylesheet" href="/Frontend/css/horario.css" />
-  <link rel="stylesheet" href="./css/Pagina estilos/navbar.css">
+  <link rel="stylesheet" href="./css/Pagina estilos/navegacionCliente.css">
   <link rel="stylesheet" href="./css/Pagina estilos/footer.css">
 </head>
 <body>
@@ -30,21 +30,17 @@
     </div>
   </nav>
 
-  <!-- Hero -->
   <section class="hero">
     <h1>La emoción del cine en tu ciudad</h1>
     <p>Consulta funciones, estrenos y reserva tu entrada.</p>
     <a href="#cartelera" class="btn-principal">Ver Cartelera</a>
   </section>
 
-  <!-- Main content -->
-  <main class="container">
+  <main >
     <h2>Horarios</h2>
-
-        <!-- Filtro por Horarios -->
     <section class="filtro-horarios">
-      <label for="horarioFiltro">Filtrar por horario:</label>
-      <select id="horarioFiltro">
+      <label>Filtrar por horario:</label>
+      <select>
         <option value="todos">Todos</option>
         <option value="mañana">Mañana (10:00 - 12:00)</option>
         <option value="tarde">Tarde (14:00 - 18:00)</option>
@@ -52,20 +48,18 @@
       </select>
     </section>
 
-    <!-- Película 1 -->
     <article class="tarjeta-pelicula">
-      <div class="poster-container">
-        <img src="/img/pelicula.png" alt="Poster de película" class="poster" />
+      <div class="contenido-pelicula">
+        <img src="/img/pelicula.png" alt="Poster de película"/>
       </div>
       <div class="info-pelicula">
-        <h3 class="titulo">Título de la Película</h3>
-        <p ><strong>Sinopsis:</strong> El legendario asesino John Wick...</p>
-
-        <div class="horarios-container">
-          <h4>Horarios:</h4>
-
+        <h4>Título de la Película</h4>
+        <p><strong>Sinopsis:</strong> El legendario asesino John Wick...</p>
+        <br>
+        <h4>Horarios:</h4>
           <div class="bloque-sala">
-            <strong>Sala 1 (2D)</strong><br />
+            <br>
+            <strong>Sala 1 (2D)</strong>
             <a href="./ReservarAsiento.html"><button class="btn-horario mañana" >10:00</button></a>
             <a href="./ReservarAsiento.html"><button class="btn-horario tarde">14:00</button></a>
             <a href="./ReservarAsiento.html"><button class="btn-horario noche">20:00</button></a>
@@ -74,20 +68,18 @@
       </div>
     </article>
 
-    <!-- Película 2 -->
     <article class="tarjeta-pelicula">
-      <div class="poster-container">
-        <img src="/img/mario.png" alt="Poster de película" class="poster" />
+      <div class="contenido-pelicula">
+        <img src="/img/mario.png" alt="Poster de película"/>
       </div>
       <div class="info-pelicula">
-        <h3 class="titulo">Título de la Película</h3>
+        <h4>Título de la Película</h4>
         <p><strong>Sinopsis:</strong> Dos hermanos plomeros, Mario y Luigi...</p>
-
-        <div class="horarios-container">
-          <h4>Horarios:</h4>
-
+        <br>
+        <h4>Horarios:</h4>
           <div class="bloque-sala">
-            <strong>Sala 2 (Estándar)</strong><br />
+            <br>
+            <strong>Sala 2 (Estándar)</strong>
             <button class="btn-horario mañana">10:00</button>
             <button class="btn-horario tarde">15:00</button>
             <button class="btn-horario noche">20:00</button>
@@ -95,10 +87,8 @@
         </div>
       </div>
     </article>
-
   </main>
 
-  <!-- Pie de página -->
   <footer class="pie-pagina">
     <div class="pie-pagina-superior">
       <div class="logo-pie">

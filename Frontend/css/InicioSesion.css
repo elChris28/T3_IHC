@@ -1,14 +1,12 @@
-    main 
-    {
-        border-radius: 12px;
-        height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+main {
+    border-radius: 12px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
         
-    .contenedor-inicio-sesion 
-    {
+.contenedor-inicio-sesion {
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 2rem;
@@ -18,72 +16,72 @@
     text-align: center;
     color: white;
     animation: arriba 1s ease-in-out;
-    }
-    @keyframes arriba {
-        from {
-        opacity: 0;
-        transform: translateY(20px);
-        }
-        to {
-        opacity: 1;
-        transform: translateY(0);
-        }
-    }
+}
 
+@keyframes arriba {
+    from {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
 
-    h2 {
+h2 {
     text-align: center;
     margin-bottom: 1.5rem;
     color: #fbc531;
-    }
+}
 
-    .grupo-formulario {
+.grupo-formulario {
     margin-bottom: 1.2rem;
-    }
+}
 
-    label {
+label {
     display: block;
     margin-bottom: 0.5rem;
-    }
+}
 
-    input[type="email"],
-    input[type="password"] {
-        width: 100%;
-        padding: 0.6rem;
-        border: none;
-        border-radius: 6px;
-        background-color: #f1f1f1;
-        color: #000;
-        font-size: 1rem;
-    }
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+    color: #000;
+    font-size: 1rem;
+}
 
 
-    button {
-        padding: 0.7rem 2rem;
-        font-size: 1rem;
-        border: none;
-        border-radius: 6px;
-        background-color: #f7c846c7;
-        color: #000;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
+button {
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #f7c846c7;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-    button:hover {
-        background-color: #f8ba01;
-    }
+button:hover {
+    background-color: #f8ba01;
+}
 
-    .enlaces-formulario {
-        text-align: center;
-        margin-top: 1rem;
-        font-size: 0.9rem;
-    }
+.enlaces-formulario {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
 
-    .enlaces-formulario a {
-        color: #fbc531;
-        text-decoration: none;
-    }
+.enlaces-formulario a {
+    color: #fbc531;
+    text-decoration: none;
+}
 
-    .enlaces-formulario a:hover {
-        text-decoration: underline;
-    }
+.enlaces-formulario a:hover {
+    text-decoration: underline;
+}
