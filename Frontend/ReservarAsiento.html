@@ -32,71 +32,71 @@
     </nav>
 
 
-    <main class="container">
+    <main class="contenedor-principal">
         <!-- Panel Izquierdo -->
         <div class="panel-izquierdo">
-            <div class="text-center">
-            <img id="poster" src="/img/pelicula.png" style="height: 190px;" alt="Poster" />
+            <div class="centrado-texto">
+                <img id="cartel" src="/img/pelicula.png" style="height: 190px;" alt="Cartel de la película" />
             </div>
-            <h4 id="titulo">JOHN WICK 2</h4>
-            <p id="idioma">Español</p>
-            <p><strong>Fecha:</strong> <span id="fecha">10/06/2025</span></p>
-            <p><strong>Hora:</strong> <span id="hora">19:00</span></p>
-            <p><strong>Sala:</strong> <span id="sala">Sala 3</span></p>
-            <p><strong>Butacas seleccionadas:</strong> <span id="butacasSeleccionadas" class="butacas-info">Ninguna</span></p>
+            <h4 id="titulo-pelicula">JOHN WICK 2</h4>
+            <p id="idioma-pelicula">Español</p>
+            <p><strong>Fecha:</strong> <span id="fecha-funcion">10/06/2025</span></p>
+            <p><strong>Hora:</strong> <span id="hora-funcion">19:00</span></p>
+            <p><strong>Sala:</strong> <span id="sala-funcion">Sala 3</span></p>
+            <p><strong>Butacas seleccionadas:</strong> <span id="butacas-seleccionadas" class="info-butacas">Ninguna</span></p>
 
-            <div id="cardPedido" class="card">
-            <h6 class="fw-bold text-danger mb-2">Mi Pedido</h6>
-            <ul id="resumenPedido" class="list-group">
+            <div id="tarjeta-pedido" class="tarjeta">
+            <h6 class="negrita texto-rojo mb-2">Mi Pedido</h6>
+            <ul id="resumen-pedido" class="lista-elementos">
                 <li>Entrada x1 - S/ 20.00</li>
             </ul>
-            <p class="fw-bold text-end">Total: <span id="totalPedido">S/. 20.00</span></p>
-            <button class="btn btn-success">Ir a Pago</button>
+            <p class="negrita texto-derecha">Total: <span id="total-pedido">S/. 20.00</span></p>
+            <button class="btn btn-exito">Ir a Pago</button>
             </div>
         </div>
 
         <!-- Panel Derecho -->
         <div class="panel-derecho">
-            <h5 class="pantalla">Pantalla</h5>
-                <div class="asientos-container">
+            <h5 class="pantalla-etiqueta">Pantalla</h5>
+                <div class="contenedor-asientos">
                     <!-- Fila 1 -->
-                    <div class="fila-asientos-wrapper">
-                        <button class="pov-button">POV</button>
+                    <div class="envoltura-fila-asientos">
+                        <button class="boton-pov">POV</button>
                         <div class="fila-asientos">
-                        <div class="asiento disponible"></div>
-                        <div class="asiento ocupada"></div>
-                        <div class="asiento disponible"></div>
-                        <div class="asiento ocupada"></div>
-                        <div class="asiento seleccionada"></div>
+                            <div class="asiento disponible"></div>
+                            <div class="asiento ocupada"></div>
+                            <div class="asiento disponible"></div>
+                            <div class="asiento ocupada"></div>
+                            <div class="asiento seleccionada"></div>
                         </div>
-                        <button class="pov-button">POV</button>
+                        <button class="boton-pov">POV</button>
                     </div>
 
                     <!-- Fila 2 -->
-                    <div class="fila-asientos-wrapper">
+                    <div class="envoltura-fila-asientos">
                         <div class="fila-asientos">
-                        <div class="asiento disponible"></div>
-                        <div class="asiento disponible"></div>
-                        <div class="asiento disponible"></div>
-                        <div class="asiento disponible"></div>
-                        <div class="asiento disponible"></div>
+                            <div class="asiento disponible"></div>
+                            <div class="asiento disponible"></div>
+                            <div class="asiento disponible"></div>
+                            <div class="asiento disponible"></div>
+                            <div class="asiento disponible"></div>
                         </div>
                     </div>
 
                     <!-- Fila 3 -->
-                    <div class="fila-asientos-wrapper">
+                    <div class="envoltura-fila-asientos">
                         <div class="fila-asientos">
-                        <div class="asiento silla"></div>
-                        <div class="asiento silla"></div>
-                        <div class="asiento silla"></div>
-                        <div class="asiento silla"></div>
-                        <div class="asiento silla"></div>
+                            <div class="asiento silla"></div>
+                            <div class="asiento silla"></div>
+                            <div class="asiento silla"></div>
+                            <div class="asiento silla"></div>
+                            <div class="asiento silla"></div>
                         </div>
                     </div>
 
                     <!-- Fila 4 -->
-                    <div class="fila-asientos-wrapper">
-                        <button class="pov-button">POV</button>
+                    <div class="envoltura-fila-asientos">
+                        <button class="boton-pov">POV</button>
                         <div class="fila-asientos">
                         <div class="asiento disponible"></div>
                         <div class="asiento disponible"></div>
@@ -104,11 +104,11 @@
                         <div class="asiento seleccionada"></div>
                         <div class="asiento disponible"></div>
                         </div>
-                        <button class="pov-button">POV</button>
+                        <button class="boton-pov">POV</button>
                     </div>
 
                     <!-- Fila 5 -->
-                    <div class="fila-asientos-wrapper">
+                    <div class="envoltura-fila-asientos">
                         <div class="fila-asientos">
                         <div class="asiento disponible"></div>
                         <div class="asiento disponible"></div>
@@ -119,7 +119,7 @@
                     </div>
 
                     <!-- Fila 6 -->
-                    <div class="fila-asientos-wrapper">
+                    <div class="envoltura-fila-asientos">
                         <div class="fila-asientos">
                         <div class="asiento disponible"></div>
                         <div class="asiento disponible"></div>
@@ -130,8 +130,8 @@
                     </div>
 
                     <!-- Fila 7 -->
-                    <div class="fila-asientos-wrapper">
-                        <button class="pov-button">POV</button>
+                    <div class="envoltura-fila-asientos">
+                        <button class="boton-pov">POV</button>
                         <div class="fila-asientos">
                         <div class="asiento disponible"></div>
                         <div class="asiento disponible"></div>
@@ -139,7 +139,7 @@
                         <div class="asiento disponible"></div>
                         <div class="asiento disponible"></div>
                         </div>
-                        <button class="pov-button">POV</button>
+                        <button class="boton-pov">POV</button>
                     </div>
                     
                 </div>
@@ -151,11 +151,11 @@
                         <div><span class="asiento silla"></span> Silla de ruedas</div>
                     </div>
 
-                    <div class="text-center mt-4">
-                        <a href="CompraDulces.html" class="btn btn-primary btn-lg">Continuar</a>
+                    <div class="centrado-texto mt-4">
+                        <a href="CompraDulces.html" class="btn btn-principal btn-grande">Continuar</a>
                     </div>
                 </div>
-            </div>
+        </div>
 
     </main>
 

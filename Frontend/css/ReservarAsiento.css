@@ -1,5 +1,5 @@
    /* Estilo base para los asientos */
-    main.container {
+    main {
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
