@@ -30,32 +30,24 @@
   border-radius: 0.3rem;
 }
 
-/* Main Content */
-.content-wrapper {
+.envoltorio-contenido {
   padding: 5rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.section {
-  margin-bottom: 3rem;
-}
-
-.two-columns {
+.dos-columnas {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
 
-.two-columns > * {
-  flex: 1 1 50%;
-}
 
-.responsive-img {
+.primera-imagen {
   max-width: 70%;
   border-radius: 10px;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px rgb(141, 141, 141);
 }
 
 .mapa {
@@ -63,21 +55,5 @@
   min-height: 400px;
   border-radius: 10px;
   border: none;
+  width: 600px;
 }
-
-.center-text {
-  text-align: center;
-}
-
-.social-buttons a {
-  padding: 0.5rem 1rem;
-  margin: 0 0.5rem;
-  border-radius: 4px;
-  color: white;
-  text-decoration: none;
-}
-
-.btn-facebook { background: #3b5998; }
-.btn-instagram { background: #e4405f; }
-.btn-tiktok { background: #000000; }
-

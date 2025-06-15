@@ -37,53 +37,63 @@
     <main>
         <section class="contenedor-incidencia">
         <h2>Registrar Incidencia</h2>
+
         <form>
             <div class="grupo-formulario">
-            <label>Nombre completo:</label>
-            <input type="text" required />
+                <div >
+                <br>
+                <label>Nombre completo:</label>
+                <input type="text" required />
+                </div>
+
+                <br>
+                <div >
+                <label>Correo electrónico:</label>
+                <input type="email" required />
+                </div>
+
+                <br>
+                <div>
+                <label>Fecha de visita:</label>
+                <input type="date" required />
+                </div>
+
+                <br>
+                <div>
+                <label>Tipo de incidencia:</label>
+                <select required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="boleto">Problema con boletos</option>
+                    <option value="sala">Problema en la sala</option>
+                    <option value="dulceria">Problema con dulcería</option>
+                    <option value="personal">Atención del personal</option>
+                    <option value="otro">Otro</option>
+                </select>
+                </div>
+
+                <br>
+                <div>
+                <label>Descripción de la incidencia:</label>
+                <textarea rows="5" required></textarea>
+                </div>
+
+                <br>
+                <div>
+                <label>Evidencia:</label>
+                <input type="file" required />
+                </div>
+
+                <br>
+                <div>
+                    <label><input type="checkbox" required> Acepto que el cine se comunique conmigo respecto a esta incidencia.</label><br/>
+                    <label><input type="checkbox" required> He leído la política de privacidad.</label>
+                </div>
             </div>
 
-            <div class="grupo-formulario">
-            <label>Correo electrónico:</label>
-            <input type="email" required />
-            </div>
-
-            <div class="grupo-formulario">
-            <label>Fecha de visita:</label>
-            <input type="date" required />
-            </div>
-
-            <div class="grupo-formulario">
-            <label>Tipo de incidencia:</label>
-            <select required>
-                <option value="">Seleccione una opción</option>
-                <option value="boleto">Problema con boletos</option>
-                <option value="sala">Problema en la sala</option>
-                <option value="dulceria">Problema con dulcería</option>
-                <option value="personal">Atención del personal</option>
-                <option value="otro">Otro</option>
-            </select>
-            </div>
-
-            <div class="grupo-formulario">
-            <label>Descripción de la incidencia:</label>
-            <textarea rows="5" required></textarea>
-            </div>
-
-            <div class="grupo-formulario">
-            <label>Evidencia:</label>
-            <input type="file" required />
-            </div>
-
-            <div class="grupo-formulario">
-                <label><input type="checkbox" required> Acepto que el cine se comunique conmigo respecto a esta incidencia.</label><br/>
-                <label><input type="checkbox" required> He leído la política de privacidad.</label>
-            </div>
-
-            <div class="acciones-formulario">
+            <div>
             <button type="submit">Enviar Incidencia</button>
             </div>
-
+            
         </form>
         </section>
     </main>

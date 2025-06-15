@@ -29,14 +29,12 @@
   font-weight: bold;
   border-radius: 0.3rem;
 }
-
-/*MAIN */
-
-.promociones-main {
+/* main */
+.principal-promociones {
   padding: 4rem 1rem;
 }
 
-.promociones-container {
+.contenedor-promociones {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -44,7 +42,7 @@
   gap: 2rem;
 }
 
-.promo-card {
+.tarjeta-promocion {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,23 +55,20 @@
   gap: 1.5rem;
 }
 
-.promo-text {
-  flex: 1 1 60%;
-}
 
-.promo-title {
+.titulo-promocion {
   font-size: 1.8rem;
-  color: #333;
+  color: #252525;
   margin-bottom: 0.5rem;
 }
 
-.promo-desc {
+.descripcion-promocion {
   font-size: 1rem;
-  color: #555;
+  color: #444444;
   margin-bottom: 1rem;
 }
 
-.promo-link {
+.enlace-promocion {
   display: inline-block;
   padding: 0.6rem 1.2rem;
   background-color: #c62828;
@@ -83,15 +78,14 @@
   transition: background-color 0.3s ease;
 }
 
-.promo-link:hover {
+.enlace-promocion:hover {
   background-color: #a31f1f;
 }
 
-.promo-img {
-  flex: 1 1 35%;
+.imagen-promocion {
   max-width: 300px;
   width: 100%;
   border-radius: 10px;
-  border: 6px solid #ccc;
+  border: 6px solid #c99f1870;
 }
 
