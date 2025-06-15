@@ -7,7 +7,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 1rem;
   text-align: center;
 }
 
@@ -38,19 +37,19 @@
   font-family: sans-serif;
 }
 
-.cartelera-header {
+.cartelera-titulo {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.cartelera-header h2 {
+.cartelera-titulo h2 {
   font-size: 2.5rem;
   color: #fef4f4;
   font-weight: 900;
 }
 
-.cartelera-header nav a {
+.cartelera-titulo nav a {
   margin: 0 10px;
   text-decoration: none;
   color: rgb(235, 235, 235);
@@ -58,7 +57,7 @@
   position: relative;
 }
 
-.cartelera-header nav a.activo::after {
+.cartelera-titulo nav a.activo::after {
   content: "";
   display: block;
   width: 100%;
@@ -84,15 +83,10 @@
   border-radius: 5px;
 }
 
-/* Cuadrícula de 2x2 para películas chicas */
-.peliculas-chicas {
+.contenido-extra {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-}
-
-.pelicula-chica {
-  position: relative;
 }
 
 .pelicula-chica img {
@@ -114,16 +108,7 @@
   border-radius: 0 5px 5px 0;
 }
 
-/* Botón lateral */
-.ver-mas {
-  background-color: #e60044;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  writing-mode: vertical-rl;
-  text-align: center;
-}
+
 
 .ver-mas a {
   color: white;
@@ -131,7 +116,7 @@
   text-decoration: none;
 }
 
-.porque-elegirnos {
+.caracteristicas {
   background-color: #121212;
   color: white;
   text-align: center;
@@ -139,14 +124,14 @@
   margin-top: 30px;
 }
 
-.porque-elegirnos h2 {
+.caracteristicas h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.beneficios {
+.contenido-beneficios {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
