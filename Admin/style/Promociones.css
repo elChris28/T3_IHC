@@ -1,27 +1,44 @@
-.formulario {
+/* FORMULARIO */
+.formulario-promocion {
   max-width: 600px;
 }
 
-.form-group {
+.grupo-formulario {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.form-group input,
-.form-group textarea {
+.grupo-formulario input,
+.grupo-formulario textarea {
   width: 100%;
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;
   border: 1px solid #000000;
-  
 }
 
-.grid-promociones {
+/* GRID PROMOCIONES */
+.contenedor-promociones {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 20px;
+}
+
+/* BOTÓN */
+.boton-promocion {
+  background-color: #e50914;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton-promocion:hover {
+  background-color: #b71c1c;
 }

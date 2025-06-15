@@ -1,6 +1,4 @@
-/* ============================= */
-/* SECCIÓN PRINCIPAL (Cuadros y Gráficos) */
-/* ============================= */
+
 .seccion-principal {
     display: flex;
     flex-direction: column;

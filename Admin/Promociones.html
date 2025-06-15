@@ -20,7 +20,7 @@
         <li><a href="Promociones.html"><i class="fa-solid fa-tag"></i>Promociones</a></li>
         <li><a href="empleados.html"><i class="fa-solid fa-users"></i>Empleados</a></li>
         <li><a href="reportes.html"><i class="fa-solid fa-folder-plus"></i>Reportes</a></li>
-        <li><a href="/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Cerrar Sesión</a></li>
+        <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Cerrar Sesión</a></li>
       </ul>
     </aside>
 
@@ -33,28 +33,33 @@
           <img src="/img/usuarioFondo.png" class="avatar">
         </div>
       </header>
-      <form id="formPromocion" class="formulario">
-        <div class="form-group">
+
+      <form class="formulario-promocion">
+        <div class="grupo-formulario">
           <label><strong>Nombre de la promoción:</strong></label>
-          <input type="text" id="nombre" required>
+          <input type="text" required>
         </div>
-        <div class="form-group">
+
+        <div class="grupo-formulario">
           <label><strong>Descripción:</strong></label>
-          <textarea id="descripcion" rows="3" required></textarea>
+          <textarea required></textarea>
         </div>
-        <div class="form-group">
+
+        <div class="grupo-formulario">
           <label><strong>Imagen de la promoción:</strong></label>
-          <input type="file" id="imagen" accept="image/*" required>
+          <input type="file" accept="image/*" required>
         </div>
-        <div class="form-group">
+
+        <div class="grupo-formulario">
           <label><strong>Archivo PDF (Términos y Condiciones):</strong></label>
-          <input type="file" id="pdf" accept="application/pdf" required>
+          <input type="file" accept="application/pdf" required>
         </div>
-        <button type="submit" class="boton">Guardar Promoción</button>
+
+        <button type="submit" class="boton-promocion">Guardar Promoción</button>
       </form>
 
       <h3>Promociones Guardadas</h3>
-      <div id="contenedorPromociones" class="grid-promociones"></div>
+      <div class="contenedor-promociones"></div>
     </main>
   </div>
 
