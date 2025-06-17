@@ -32,44 +32,41 @@
           <img src="/img/usuarioFondo.png" class="avatar">
         </div>
       </header>
-      <form id="formSala" class="formulario">
+      <form class="formulario">
         <div class="fila">
-          <input type="text" id="nombreSala" placeholder="Nombre de la sala" required>
-          <input type="number" id="capacidad" placeholder="Capacidad" required>
+          <input type="text" placeholder="Nombre de la sala" required>
+          <input type="number" placeholder="Capacidad" required>
         </div>
         <div class="fila">
-          <select id="tipoSala" required>
+          <select required>
             <option value="">Tipo de Sala</option>
             <option value="2D">2D</option>
             <option value="3D">3D</option>
             <option value="VIP">VIP</option>
             <option value="IMAX">IMAX</option>
           </select>
-          <input type="text" id="ubicacion" placeholder="Ubicación / Piso">
+          <input type="text" placeholder="Ubicación / Piso">
         </div>
         <div class="fila">
-          <select id="estado" required>
+          <select required>
             <option value="">Estado</option>
             <option value="activa">Activa</option>
             <option value="inactiva">Inactiva</option>
           </select>
-          <select id="peliculaSala">
-            <option value="">-- Sin película asignada --</option>
+          <select>
+            <option>-- Sin película asignada --</option>
           </select>
         </div>
         <div class="campo-horarios">
           <label>Horarios disponibles</label>
           <div class="fila">
-            <input type="time" id="inputHorario">
+            <input type="time">
             <button type="button" class="boton" onclick="agregarHorario()">Agregar Horario</button>
           </div>
-          <div id="listaHorarios" class="horarios-lista"></div>
         </div>
         <button type="submit" class="boton">Guardar Sala</button>
       </form>
-
       <h2>Salas agregadas</h2>
-      <div id="listaSalas" class="salas-grid"></div>
     </main>
    </div>
 </body>
