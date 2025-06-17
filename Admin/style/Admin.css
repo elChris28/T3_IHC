@@ -14,14 +14,13 @@
     background-color: #ffffff;
     padding: 1.5em;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.222);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #333;
-    border: 1px solid #eee;
 }
 
 .icono {
@@ -52,11 +51,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 2em; 
-    grid-column: span 2; 
 }
 
-.tarjeta-grafico-grande,
-.tarjeta-grafico-pequeño {
+.tarjeta-grafico {
     background-color: #ffffff;
     padding: 1.5em;
     border-radius: 10px;
@@ -65,74 +62,10 @@
     border: 1px solid #eee;
 }
 
-.encabezado-grafico {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1em;
-}
-
-.tarjeta-grafico-grande h2,
-.tarjeta-grafico-pequeño h2 {
+.tarjeta-grafico h2 {
     font-size: 1.4em;
     color: #000000;
     margin: 0;
-}
-
-.area-grafico {
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    overflow: hidden;
-    border: 1px solid #ddd;
-}
-
-.area-grafico img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-.peliculas-mas-vistas .barras-peliculas {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; 
-    margin-top: 1.5em;
-}
-
-.peliculas-mas-vistas .nombre-Pelicula { 
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1em;
-    color: #555;
-}
-
-.peliculas-mas-vistas .nombre-Pelicula span { 
-    flex-basis: 90px;
-    min-width: 90px;
-    font-weight: bold;
-    color: #333;
-}
-
-.peliculas-mas-vistas .barra-progreso-pelicula {
-    flex-grow: 1;
-    height: 20px;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid #ccc;
-}
-
-.peliculas-mas-vistas .barra-progreso-pelicula .progreso {
-    height: 100%;
-    background-color: #6091D5;
-    border-radius: 10px;
-    transition: width 0.5s ease-out;
 }
 
 .asistencia-mensual .contenedor-grafico-lineas {
@@ -149,27 +82,11 @@
     margin-top: 1em;
 }
 
-.contenedor-grafico-lineas svg {
-    position: absolute;
-    top: 15px;
-    left: 55px;
-    right: 15px;
-    bottom: 30px;
-    width: calc(100% - 70px);
-    height: calc(100% - 45px);
-    overflow: visible;
-}
 
 .contenedor-grafico-lineas svg polyline {
     fill: none;
     stroke: #6091D5;
     stroke-width: 2;
-}
-
-.contenedor-grafico-lineas svg line {
-    stroke: #ccc;
-    stroke-width: 0.5;
-    stroke-dasharray: 2,2;
 }
 
 .etiquetas-eje-x {
@@ -185,11 +102,6 @@
     box-sizing: border-box;
 }
 
-.etiquetas-eje-x span {
-    display: block;
-    text-align: center;
-    flex-grow: 1;
-}
 
 .etiquetas-eje-y {
     position: absolute;
@@ -221,27 +133,10 @@
     margin-top: 1em;
 }
 
-.contenedor-grafico-lineas-semanal svg {
-    position: absolute;
-    top: 15px;
-    left: 55px;
-    right: 15px;
-    bottom: 30px;
-    width: calc(100% - 70px);
-    height: calc(100% - 45px);
-    overflow: visible;
-}
-
 .contenedor-grafico-lineas-semanal svg polyline {
     fill: none;
     stroke: #FF9800;
     stroke-width: 2;
-}
-
-.contenedor-grafico-lineas-semanal svg line {
-    stroke: #eee;
-    stroke-width: 0.5;
-    stroke-dasharray: 2,2;
 }
 
 .etiquetas-eje-x-semanal {
@@ -257,21 +152,14 @@
     box-sizing: border-box;
 }
 
-.etiquetas-eje-x-semanal span {
-    display: block;
-    text-align: center;
-    flex-grow: 1;
-}
 
 .etiquetas-eje-y-semanal {
     position: absolute;
     left: 0;
-    top: 0;
     height: calc(100% - 53px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 10px;
     font-size: 0.9rem;
     color: #555;
     text-align: right;
@@ -279,6 +167,43 @@
     box-sizing: border-box;
 }
 
+
+.barras-peliculas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    margin-top: 1.5em;
+}
+
+.nombre-Pelicula { 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.nombre-Pelicula span { 
+    flex-basis: 90px;
+    min-width: 90px;
+    font-weight: bold;
+    color: #4e4e4e;
+}
+
+.barra-progreso-pelicula {
+    flex-grow: 1;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.barra-progreso-pelicula .progreso {
+    height: 100%;
+    background-color: #6091D5;
+    border-radius: 10px;
+}
 
 .cuadricula-reportes {
     display: grid;
@@ -288,7 +213,7 @@
 }
 
 .tarjeta-reporte {
-    background-color: #fff;
+    background-color: #fdfdfd;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -306,15 +231,10 @@
 
 .ventas-por-mes .contenedor-grafico-con-ejes {
     display: flex;
-    align-items: flex-end;
     height: 220px;
-    margin-top: 1.5rem;
+    margin-top: 5.5rem;
     position: relative;
     padding-left: 60px;
-    padding-bottom: 25px;
-    border-left: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    box-sizing: border-box;
 }
 
 .ventas-por-mes .etiquetas-eje-y-ventas {
@@ -331,7 +251,6 @@
     width: 60px;
     top: 0;
     height: calc(100% - 25px);
-    transform: translateY(-5px);
 }
 
 .ventas-por-mes .etiquetas-eje-y-ventas span {
@@ -343,11 +262,7 @@
     flex-grow: 1;
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
     height: 100%;
-    position: relative;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
 .ventas-por-mes .grupo-barra {
@@ -356,28 +271,22 @@
     align-items: center;
     justify-content: flex-end;
     height: 100%;
-    position: relative;
-    flex-basis: 0;
-    flex-grow: 1;
     max-width: 80px;
 }
 
 .ventas-por-mes .barra {
     width: 40px;
-    background-color: #6091D5;
+    background-color: #2056a3;
     border-radius: 3px 3px 0 0;
-    transition: height 0.5s ease-out;
 }
 
 .ventas-por-mes .grupo-barra .etiqueta {
     font-size: 0.9rem;
     color: #555;
     margin-top: 8px;
-    white-space: nowrap;
 }
 
 .tarjeta-reporte ul {
-    list-style: none;
     padding: 0;
     margin-top: 1em;
 }
@@ -386,7 +295,7 @@
     display: flex;
     align-items: center;
     padding: 0.6em 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #47474746;
 }
 
 .tarjeta-reporte ul li:last-child {
