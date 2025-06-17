@@ -18,6 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  color: #000000;
 }
 
 .producto-tarjeta {
@@ -36,7 +37,7 @@
   object-fit: cover;
 }
 
-.producto-titulo {
+h3 {
   font-size: 1rem;
   margin: 0.5rem;
   color: #000000;
@@ -54,13 +55,9 @@
   color: #000000;
 }
 
-.producto-controles {
-  gap: 0.5rem;
-  color: #000000;
-}
-
 .control-boton {
-  background-color: #c1121f;
+  background-color: goldenrod;
+  margin: 10px;
   color: #fff;
   border: none;
   width: 30px;
@@ -82,9 +79,9 @@
 .categoria-boton {
     border-radius: 10px;
     padding: 1rem;
-    background-color: #e53935;
+    background-color: gold;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.25rem;
     font-weight: bold;
     cursor: pointer;
@@ -92,18 +89,8 @@
 }
 
 .categoria-boton:hover {
-    background-color: #b71c1c;
-    transform: scale(1.05);
+    background-color: goldenrod;
 }
-
-.ver-todos {
-    background-color: #424242;
-}
-
-.ver-todos:hover {
-    background-color: #212121;
-}
-
 
 .panel-pedido {
   background-color: #cfcebf;
