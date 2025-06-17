@@ -110,3 +110,30 @@ body {
     border: 2px solid #000000;
     object-fit: cover;
 }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.fila input,
+.fila select {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.campo-formulario {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 2px solid #000000;
+}

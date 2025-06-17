@@ -1,32 +1,7 @@
-.formulario {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.fila {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.fila input,
-.fila select {
-  flex: 1;
-  padding: 10px;
-  font-size: 16px;
-}
-
 .campo-horarios label {
   font-weight: bold;
   display: block;
   margin-bottom: 8px;
 }
 
-.horarios-lista {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-}
 

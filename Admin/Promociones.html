@@ -34,27 +34,26 @@
         </div>
       </header>
 
-      <form class="formulario-promocion">
-        <div class="grupo-formulario">
-          <label><strong>Nombre de la promoción:</strong></label>
-          <input type="text" required>
+      <form class="formulario">
+        <label><strong>Nombre de la promoción:</strong></label>
+        <div class="fila">
+          <input type="text" class="campo-formulario" placeholder="Nombre de la promoción" required>
+        </div>
+        
+        <label><strong>Descripción:</strong></label>
+        <div class="fila">
+          <input type="text" class="campo-formulario" placeholder="Descripción" required>
         </div>
 
-        <div class="grupo-formulario">
-          <label><strong>Descripción:</strong></label>
-          <textarea required></textarea>
+        <label><strong>Imagen de la promoción:</strong></label>
+        <div class="fila">
+          <input type="file" class="campo-formulario" accept="image/*" required>
         </div>
 
-        <div class="grupo-formulario">
-          <label><strong>Imagen de la promoción:</strong></label>
-          <input type="file" accept="image/*" required>
+        <label><strong>Archivo PDF (Términos y Condiciones):</strong></label>
+        <div class="fila">
+          <input type="file" class="campo-formulario" accept="application/pdf" required>
         </div>
-
-        <div class="grupo-formulario">
-          <label><strong>Archivo PDF (Términos y Condiciones):</strong></label>
-          <input type="file" accept="application/pdf" required>
-        </div>
-
         <button type="submit" class="boton">Guardar Promoción</button>
       </form>
 
