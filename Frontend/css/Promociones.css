@@ -34,7 +34,7 @@
 .btn-principal:hover {
   background-color: #e1aa00;
 }
-/* main */
+
 .principal-promociones {
   padding: 4rem 1rem;
 }
@@ -53,23 +53,21 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem;
-  background: linear-gradient(to right, #ea8f7b, #d6c25d);
-  border: 1px solid #ddd;
+  background-color: #252525;
+  border: 2px solid #cad112;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   gap: 1.5rem;
 }
 
-
 .titulo-promocion {
   font-size: 1.8rem;
-  color: #252525;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
 .descripcion-promocion {
   font-size: 1rem;
-  color: #444444;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
@@ -79,7 +77,8 @@
   background-color: gold;
   color: rgb(0, 0, 0);
   text-decoration: none;
-  border-radius: 5px;
+  font-weight: bold;
+  border-radius: 15px;
   transition: background-color 0.3s ease;
 }
 
@@ -92,6 +91,6 @@
   max-height: 300px;
   width: 100%;
   border-radius: 10px;
-  border: 6px solid #c99f1870;
+  border: 6px solid #ffffffc2;
 }
 

@@ -37,7 +37,7 @@
     content: '';
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 25px solid #f7030f;
+    border-left: 25px solid gold;
     margin-left: 5px;
 }
 
@@ -45,8 +45,8 @@
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: #e50914;
-    color: white;
+    background-color: #dae911;
+    color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
@@ -85,7 +85,7 @@
 
 .titulo-pelicula-imagen {
     font-size: 2.5rem;
-    color: #cf0d17;
+    color: #eeff00;
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
@@ -101,26 +101,13 @@
 }
 
 .contenedor-horarios-imagen h4 {
-    color: #e50914;
+    color: #eeff00;
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
 }
 
-.nombre-sala {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: #ccc;
-}
-
-.botones-horarios-imagen {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
 .btn-horario-imagen {
-    background-color: #643e3e;
+    background-color: #384725;
     border: none;
     color: white;
     padding: 0.8rem 1.5rem;
@@ -128,9 +115,10 @@
     cursor: pointer;
     font-size: 1.1rem;
     font-weight: bold;
+    margin:5px;
     transition: background-color 0.3s;
 }
 
 .btn-horario-imagen:hover {
-    background-color: #a1131a;
+    background-color: goldenrod;
 }

@@ -3,14 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cine del Norte</title>
+  <title>Cine del Norte - Inicio de Sesion</title>
   <link rel="stylesheet" href="/Frontend/css/InicioSesion.css" />
   <link rel="stylesheet" href="./css/Pagina estilos/navegacionCliente.css">
-
 </head>
 <body>
-
-    <!-- Barra de navegación sin Bootstrap -->
     <nav class="barra-navegacion">
         <div class="contenedor-barra">
         <div class="barra-izquierda">
@@ -31,31 +28,34 @@
     </nav>
 
     <main>
-    <section class="contenedor-inicio-sesion">
-        <h2>Inicio de Sesión</h2>
-        <form >
-            <div class="grupo-formulario">
-                <label for="email">Correo electronico:</label>
-                <input type="email" id="email" name="email" required />
-            </div>
+        <section class="contenedor-inicio-sesion">
+            <h2>Inicio de Sesión</h2>
+            <form>
+                <label>Correo electronico:</label>
+                <div class="grupo-formulario">
+                    <br>
+                    <input type="email" required />
+                </div>
+                
+                <label>Contraseña:</label>
+                <div class="grupo-formulario">
+                    <br>
+                    <input type="password" required />
+                </div>
 
-            <div class="grupo-formulario">
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required />
-            </div>
+                <br>
+                <div>
+                    <button type="submit">Iniciar sesión</button>
+                </div>
 
-            <div>
-                <button type="submit">Iniciar sesión</button>
-            </div>
-
-            <div class="enlaces-formulario">
-                <a href="#">¿Olvidaste tu contraseña?</a>
-                <br />
-                <a href="RegistroSesion.html">¿No tienes cuenta? Registrate</a>
-            </div>
-        </form>
-    </section>
+                <br>
+                <div class="enlaces-formulario">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <br>
+                    <a href="RegistroSesion.html">¿No tienes cuenta? Registrate</a>
+                </div>
+            </form>
+        </section>
     </main>
-
 </body>
 </html>

@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cine del Norte</title>
+  <title>Cine del Norte - Incidencia</title>
   <link rel="stylesheet" href="/Frontend/css/Incidencias.css" />
   <link rel="stylesheet" href="./css/Pagina estilos/footer.css">
   <link rel="stylesheet" href="./css/Pagina estilos/navegacionCliente.css">
-
 </head>
 <body>
-
-    <!-- Barra de navegación sin Bootstrap -->
     <nav class="barra-navegacion">
         <div class="contenedor-barra">
         <div class="barra-izquierda">
@@ -31,74 +28,61 @@
         </div>
     </nav>
 
-
-
-  <!-- Cartelera -->
     <main>
         <section class="contenedor-incidencia">
         <h2>Registrar Incidencia</h2>
-
         <form>
             <div class="grupo-formulario">
-                <div >
-                <br>
-                <label>Nombre completo:</label>
-                <input type="text" required />
+                <div>
+                    <br>
+                    <label>Nombre completo:</label>
+                    <input type="text" required />
                 </div>
-
-                <br>
-                <div >
-                <label>Correo electrónico:</label>
-                <input type="email" required />
-                </div>
-
                 <br>
                 <div>
-                <label>Fecha de visita:</label>
-                <input type="date" required />
+                    <label>Correo electrónico:</label>
+                    <input type="email" required />
                 </div>
-
                 <br>
                 <div>
-                <label>Tipo de incidencia:</label>
-                <select required>
-                    <option value="">Seleccione una opción</option>
-                    <option value="boleto">Problema con boletos</option>
-                    <option value="sala">Problema en la sala</option>
-                    <option value="dulceria">Problema con dulcería</option>
-                    <option value="personal">Atención del personal</option>
-                    <option value="otro">Otro</option>
-                </select>
+                    <label>Fecha de visita:</label>
+                    <input type="date" required />
                 </div>
-
                 <br>
                 <div>
-                <label>Descripción de la incidencia:</label>
-                <textarea rows="5" required></textarea>
+                    <label>Tipo de incidencia:</label>
+                    <select required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="boleto">Problema con boletos</option>
+                        <option value="sala">Problema en la sala</option>
+                        <option value="dulceria">Problema con dulcería</option>
+                        <option value="personal">Atención del personal</option>
+                        <option value="otro">Otro</option>
+                    </select>
                 </div>
-
                 <br>
                 <div>
-                <label>Evidencia:</label>
-                <input type="file" required />
+                    <label>Descripción de la incidencia:</label>
+                    <textarea rows="5" required></textarea>
                 </div>
-
+                <br>
+                <div>
+                    <label>Evidencia:</label>
+                    <input type="file" required />
+                </div>
                 <br>
                 <div>
                     <label><input type="checkbox" required> Acepto que el cine se comunique conmigo respecto a esta incidencia.</label><br/>
                     <label><input type="checkbox" required> He leído la política de privacidad.</label>
                 </div>
             </div>
-
             <div>
-            <button type="submit">Enviar Incidencia</button>
+                <button type="submit">Enviar Incidencia</button>
             </div>
-            
         </form>
         </section>
     </main>
 
-    <!-- Pie de página -->
     <footer class="pie-pagina">
         <div class="pie-pagina-superior">
         <div class="logo-pie">
@@ -138,6 +122,5 @@
         </div>
         </div>
     </footer>
-
 </body>
 </html>

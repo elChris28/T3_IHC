@@ -35,14 +35,7 @@ h2 {
     color: #fbc531;
 }
 
-.grupo-formulario {
-    margin-bottom: 1.2rem;
-}
 
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-}
 
 input[type="email"],
 input[type="password"] {
@@ -71,11 +64,6 @@ button:hover {
     background-color: #f8ba01;
 }
 
-.enlaces-formulario {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-}
 
 .enlaces-formulario a {
     color: #fbc531;

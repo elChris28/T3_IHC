@@ -3,10 +3,7 @@
   justify-content: center;
   align-items: flex-start;
   padding: 2rem 1rem;
-  gap: 2rem;
   background-color: #e0e0e088;
-  flex-wrap: wrap;
-  margin: 15;
 }
 
 .seccion-titulo {
@@ -23,24 +20,18 @@
 
 .producto-tarjeta {
   background-color: #cfcfcf;
-  border: 1px solid #505050;
+  border: 7px solid #505050;
   padding: 1rem;
   width: 200px;
   border-radius: 6px;
   text-align: center;
-
 }
 
 .producto-imagen {
   width: 100%;
   height: 200px;
   object-fit: cover;
-}
-
-h3 {
-  font-size: 1rem;
-  margin: 0.5rem;
-  color: #000000;
+  border-radius: 20px;
 }
 
 .producto-descripcion {
@@ -49,47 +40,38 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
-.producto-precio {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  color: #000000;
-}
-
 .control-boton {
-  background-color: goldenrod;
-  margin: 10px;
-  color: #fff;
-  border: none;
+  background-color: gold;
+  color: #000000;
+  margin: 15px;
   width: 30px;
   height: 30px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 4px;
+  border: 2px solid #000000;
 }
 
 .barra-categorias {
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem;
 }
 
 .categoria-boton {
-    border-radius: 10px;
-    padding: 1rem;
-    background-color: gold;
-    border: none;
-    color: rgb(0, 0, 0);
-    font-size: 1.25rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 20px;
+  padding: 1rem;
+  background-color: gold;
+  border: 3px solid #000000;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .categoria-boton:hover {
-    background-color: goldenrod;
+  background-color: goldenrod;
 }
 
 .panel-pedido {
@@ -102,16 +84,12 @@ h3 {
   color: #000000;
 }
 
-.pedido-titulo {
-  color: #0a0a0a;
-  margin-bottom: 1rem;
-}
-
 .pedido-asiento {
-  background-color: #63b384;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border-radius: 4px;
+  background-color: #000000;
+  padding: 1rem;
+  color: white;
+  margin-bottom: 2rem;
+  border-radius: 5px;
   font-weight: bold;
 }
 
@@ -122,6 +100,7 @@ h3 {
   padding: 0.5rem;
   margin-bottom: 1rem;
   border-radius: 4px;
+  border:  2px solid #000000;
   font-size: 0.9rem;
 }
 
@@ -133,16 +112,11 @@ h3 {
 
 .btnContinuar {
     text-decoration: none;
-    background-color: #e73939;
-    color: white;
+    background-color: gold;
+    color: rgb(0, 0, 0);
     font-size: 1.2rem;
-    padding: 0.75rem 2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: 3px solid #000000;
     border-radius: 10px;
 }
-
-.btnContinuar:hover
-{
-  background-color: rgb(177, 2, 2);
-}
-
-

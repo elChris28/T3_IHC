@@ -35,13 +35,13 @@
   background-color: #e1aa00;
 }
 
-.envoltorio-contenido {
+.contenido {
   padding: 5rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.dos-columnas {
+.separacion {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +49,7 @@
 }
 
 
-.primera-imagen {
+.imagen {
   max-width: 70%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(141, 141, 141);

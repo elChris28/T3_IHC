@@ -18,6 +18,7 @@ main {
 .panel-izquierdo {
   flex: 1 1 350px;
   background-color: #c6c4c4;
+  color: #000000;
 }
 
 .panel-derecho {
@@ -29,11 +30,6 @@ main {
   margin-top: 2rem;
 }
 
-h4, h5, p {
-  color: #28313a;
-  margin: 0.5rem 0;
-}
-
 .info-butacas {
   color: green;
 }
@@ -43,7 +39,6 @@ h4, h5, p {
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .btn {
@@ -119,13 +114,9 @@ h4, h5, p {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  border: 2px solid #0d6efd;
+  border: 2px solid #000000;
   cursor: pointer;
   transition: background-color 0.2s;
-}
-
-.descripcion-asiento.disponible {
-  background-color: transparent;
 }
 
 .descripcion-asiento.disponible:hover {
@@ -135,19 +126,17 @@ h4, h5, p {
 
 .descripcion-asiento.ocupada {
   background-color: gold;
-  border-color: #ffffff;
-  cursor: not-allowed;
+  border-color: #000000;
 }
 
 .descripcion-asiento.seleccionada {
   background-color: #0d6efd;
-  border-color: #0d6efd;
+  border-color: #000000;
 }
 
 .descripcion-asiento.silla {
   background-color: orange;
   border-color: #030303;
-  position: relative;
 }
 
 .leyenda {

@@ -15,7 +15,6 @@ main {
   border: 20px solid rgba(0, 0, 0, 0.3);
   padding: 2rem;
   border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
   text-align: center;
   color: white;
   animation: aparecer 1s ease-in-out;
@@ -68,6 +67,7 @@ textarea {
 button {
   padding: 0.7rem 2rem;
   font-size: 1rem;
+  font-weight: bold;
   border: none;
   border-radius: 6px;
   background-color: #fad367;

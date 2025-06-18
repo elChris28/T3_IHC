@@ -20,7 +20,6 @@
 .resumen-pedido{
   background-color: rgb(116, 116, 116);
   flex: 1;
-  min-width: 300px;
   border: 1px solid #fefcfc;
   border-radius: 8px;
   padding: 1.5rem;
@@ -29,14 +28,12 @@
 }
 
 .resumen-pedido h3 {
-  color: rgba(252, 214, 1, 0.644);
+  color: rgba(254, 216, 3, 0.845);
   margin-bottom: 1rem;
-  font-size: x-large;
 }
 
 .elemento-pedido {
   display: flex;
-  justify-content: space-between;
   background-color: #3a3a3a;
   padding: 0.5rem;
   border-radius: 4px;
