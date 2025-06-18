@@ -33,6 +33,7 @@
           <img src="/img/usuarioFondo.png" class="avatar">
         </div>
       </header>
+      
       <section class="resumen-incidencias">
         <div class="resumen-bloque">
           <div class="resumen-titulo">Total Incidencias</div>
@@ -64,14 +65,15 @@
         <div class="filtros-tabla">
           <input type="text" placeholder="Buscar por Asunto, Cliente..." class="campo-busqueda">
           <select class="filtro-seleccion">
-            <option value="">Filtrar por Estado</option>
+            <option value=""></option>
             <option value="abierto">Abierto</option>
             <option value="resuelto">Resuelto</option>
             <option value="pendiente">Pendiente</option>
           </select>
         </div>
-        <div class="contenedor-tabla">
+        <div>
           <table>
+
             <thead>
               <tr>
                 <th>ID</th>
@@ -81,7 +83,8 @@
                 <th>Estado</th>
               </tr>
             </thead>
-            <tbody>
+
+            <div>
               <tr>
                 <td>#1001</td>
                 <td>06/05/2025 14:30</td>
@@ -117,7 +120,7 @@
                 <td>PROBLEMA CON EL PAGO</td>
                 <td><span class="etiqueta-estado resuelto">RESUELTO</span></td>
               </tr>
-            </tbody>
+            </div>
           </table>
         </div>
       </section>

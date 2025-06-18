@@ -1,19 +1,23 @@
+.campo-foto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .foto-personal {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
 }
 
 .tabla-personal {
   width: 100%;
-  border-collapse: collapse;
   margin-top: 20px;
 }
 
-.tabla-personal th,
-.tabla-personal td {
+.tabla-personal th{
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
@@ -22,12 +26,6 @@
 .tabla-header {
   background-color: #222;
   color: white;
-}
-
-.campo-foto {
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
 .campo-archivo {

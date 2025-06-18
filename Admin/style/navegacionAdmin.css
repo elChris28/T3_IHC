@@ -3,13 +3,9 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f4f4f4;
 }
-.barraLateral ul li a i {
-  margin-right: 8px;
-}
 
 .interfazAdmin {
   display: flex;
-  height: 100vh;
 }
 
 .barraLateral {
@@ -20,15 +16,19 @@ body {
   padding: 1em;
 }
 
+.barraLateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.barraLateral ul li i {
+  margin-right: 8px;
+}
+
 .barraLateral h2 {
   font-size: 1.5em;
   margin-bottom: 1em;
   text-align: center;
-}
-
-.barraLateral ul {
-  list-style: none;
-  padding: 0;
 }
 
 .barraLateral ul li {
@@ -40,7 +40,7 @@ body {
   text-decoration: none;
   display: block;
   padding: 0.5em;
-  transition: background 0.3s;
+  transition: background 0.4s;
 }
 
 .barraLateral ul li a:hover {
@@ -73,7 +73,7 @@ body {
     background-color: #fff;
     padding: 1.5rem 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,7 +83,6 @@ body {
     font-size: 2.5rem;
     color: #333; 
     margin: 0; 
-    padding-bottom: 0;
 }
 
 .acciones-usuario {
@@ -96,7 +95,7 @@ body {
     font-size: 1.4em;
     color: #555;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: color 0.4s;
 }
 
 .acciones-usuario i:hover {
@@ -108,13 +107,12 @@ body {
     height: 40px;
     border-radius: 50%;
     border: 2px solid #000000;
-    object-fit: cover;
 }
 
 .formulario {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
 }
 
 .fila {
