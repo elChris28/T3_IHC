@@ -19,7 +19,7 @@
         <li><a href="Promociones.html"><i class="fa-solid fa-tag"></i>Promociones</a></li>
         <li><a href="empleados.html"><i class="fa-solid fa-users"></i>Empleados</a></li>
         <li><a href="reportes.html"><i class="fa-solid fa-folder-plus"></i>Reportes</a></li>
-        <li><a href="/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Cerrar Sesión</a></li>
+        <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Cerrar Sesión</a></li>
       </ul>
     </aside>
 
@@ -34,60 +34,59 @@
       </header>
 
       <form class="formulario"> 
-          <label><strong>Título:</strong></label>
+        <label><strong>Título:</strong></label>
+        <div class="fila">
+          <input type="text" class="campo-formulario" placeholder="Título" required>
+        </div>
 
-          <div class="fila">
-            <input type="text" class="campo-formulario" placeholder="Título" required>
-          </div>
-          <label><strong>Género:</strong></label>
-
-          <div class="fila">
+        <label><strong>Género:</strong></label>
+        <div class="fila">
           <input type="text" class="campo-formulario" placeholder="Género" required>
-          </div>
+        </div>
 
-          <label><strong>Duración:</strong></label>
-          <div class="fila">
+        <label><strong>Duración:</strong></label>
+        <div class="fila">
           <input type="text" class="campo-formulario" placeholder="Duración" required>
-          </div>
+        </div>
 
-          <label><strong>Clasificación:</strong></label>
-          <div class="fila">
+        <label><strong>Clasificación:</strong></label>
+        <div class="fila">
           <input type="text" class="campo-formulario" placeholder="Clasificación" required>
-          </div>
+        </div>
 
-          <label><strong>Idioma:</strong></label>
-          <div class="fila">
-            <select class="campo-formulario" required>
-              <option value="">Selecciona idioma</option>
-              <option value="Doblada">Doblada</option>
-              <option value="Subtitulada">Subtitulada</option>
-            </select>
-          </div>
+        <label><strong>Idioma:</strong></label>
+        <div class="fila">
+          <select class="campo-formulario" required>
+            <option value="">Selecciona idioma</option>
+            <option value="Doblada">Doblada</option>
+            <option value="Subtitulada">Subtitulada</option>
+          </select>
+        </div>
           
-          <label><strong>Sinopsis:</strong></label>
-          <div>
-            <textarea placeholder="Sinopsis" rows="3" required></textarea>
-          </div>
+        <label><strong>Sinopsis:</strong></label>
+        <div>
+          <textarea placeholder="Sinopsis" rows="3" required></textarea>
+        </div>
 
-          <label><strong>URL del tráiler:</strong></label>
-          <div>
-            <input type="url" class="campo-formulario" placeholder="https://youtu.be/..." />
-          </div>
+        <label><strong>URL del tráiler:</strong></label>
+        <div>
+          <input type="url" class="campo-formulario" placeholder="https://youtu.be/..." />
+        </div>
 
-          <label><strong>Disponibilidad:</strong></label>
-          <div>
-            <label><input type="checkbox"/> 2D</label>
-            <label><input type="checkbox"/> 3D</label>
-            <label><input type="checkbox"/> VIP</label>
-            <label><input type="checkbox"/> IMAX</label>
-          </div>
+        <label><strong>Disponibilidad:</strong></label>
+        <div>
+          <label><input type="checkbox"/> 2D</label>
+          <label><input type="checkbox"/> 3D</label>
+          <label><input type="checkbox"/> VIP</label>
+          <label><input type="checkbox"/> IMAX</label>
+        </div>
 
-          <label><strong>Portada:</strong></label>
-          <div>
-            <input type="file" class="campo-formulario" accept="image/*" required>
-          </div>
+        <label><strong>Portada:</strong></label>
+        <div>
+          <input type="file" class="campo-formulario" accept="image/*" required>
+        </div>
           
-          <button type="submit" class="boton">Agregar</button>
+        <button type="submit" class="boton">Agregar</button>
       </form>
       <h2>Películas agregadas</h2>
     </main>
